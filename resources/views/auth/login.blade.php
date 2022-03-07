@@ -12,6 +12,34 @@
             </div>
         @endif
 
+        <a href="#" class="flex items-center justify-center mt-4 text-gray-600 border rounded-lg dark:bg-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+        <div class="px-4 py-2">
+            <img src="https://img.icons8.com/color/28/000000/google-logo.png"/>
+        </div>
+
+            <span class="w-5/6 px-4 py-3 font-bold text-center">
+                Inicia sesión con Google
+            </span>
+        </a>
+
+        <a href="#" class="flex items-center justify-center mt-4 text-gray-600 border rounded-lg dark:bg-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+            <div class="px-4 py-2">
+                <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/000000/external-famous-social-media-online-social-media-and-social-networking-service-facebook-logo-color-tal-revivo.png"/>
+            </div>
+    
+                <span class="w-5/6 px-4 py-3 font-bold text-center">
+                    Inicia sesión con Facebook
+                </span>
+        </a>
+
+        <div class="flex items-center justify-between mt-4">
+            <span class="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
+            <a href="#" class="text-xs text-center text-gray-500 uppercase dark:text-gray-400 hover:underline">O inicia sesión con tu email</a>
+            <span class="w-1/5 border-b dark:border-gray-400 lg:w-1/4"></span>
+
+        </div>
+
+        
         <form method="POST" action="{{ route('login') }}">
             @csrf
 

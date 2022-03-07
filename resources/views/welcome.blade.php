@@ -1,10 +1,10 @@
 <x-app-layout>
     {{--Portada--}}
-    <section class="bg-cover" style="background-image: url({{asset('img/home/fondo.jpg')}})">
+    <section class="bg-cover" style="background-image: url({{asset('img/home/Fondo1.png')}})">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-36">
             <div class="w-full md:w-3/4 lg:w-1/2">
-            <h1 class="text-white font-fold text-4xl ">Domina la tecnologia web con ¡Courser</h1>
-            <p class="text-white text-lg mt-2 mb-4"  > En ¡Course encontraras cursos, manuaes y articulos que te ayudaran a convertirte en un profesional del desarrollo web </p>
+            <h1 class="text-white font-fold text-4xl ">DYSMATH</h1>
+            <p class="text-white text-lg mt-2 mb-4"  > Es aplicación web interactiva destinada a niños de 6 a 9 años con discalculia, para poder complementar el aprendizaje del individuo en el ámbito del razonamiento matemático. </p>
             
        @livewire('search')
         
@@ -17,7 +17,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8">
             <article>
                 <figure>
-                    <img class="rounded-xl h-36 w-full object-cover" src="{{asset('img/home/1.jpg')}}" alt="" />
+                    <img class="rounded-xl h-36 w-full object-cover" src="{{asset('img/home/Logo1.png')}}" alt="" />
                 </figure>
                 <header mt-2>
                     <h1 class="text-center text-xl text-gray-800">Cursos y proyectos</h1>
@@ -29,7 +29,7 @@
 
             <article>
                 <figure>
-                    <img class="rounded-xl h-36 w-full object-cover" src="{{asset('img/home/2.jpg')}}" alt="" />
+                    <img class="rounded-xl h-36 w-full object-cover" src="{{asset('img/home/Logo2.png')}}" alt="" />
                 </figure>
                 <header mt-2>
                     <h1 class="text-center text-xl text-gray-800">Curso laravel </h1>
@@ -41,7 +41,7 @@
 
             <article>
                 <figure>
-                    <img class="rounded-xl h-36 w-full object-cover" src="{{asset('img/home/3.jpg')}}" alt="" />
+                    <img class="rounded-xl h-36 w-full object-cover" src="{{asset('img/home/Logo3.png')}}" alt="" />
                 </figure>
                 <header mt-2>
                     <h1 class="text-center text-xl text-gray-800">Blog</h1>
@@ -53,7 +53,7 @@
 
             <article>
                 <figure>
-                    <img class="rounded-xl h-36 w-full object-cover" src="{{asset('img/home/4.jpg')}}" alt="" />
+                    <img class="rounded-xl h-36 w-full object-cover" src="{{asset('img/home/Logo4.png')}}" alt="" />
                 </figure>
                 <header mt-2>
                     <h1 class="text-center text-xl text-gray-800">Desarrollo Web</h1>
