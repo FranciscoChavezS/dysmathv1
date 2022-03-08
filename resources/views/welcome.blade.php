@@ -88,6 +88,22 @@
             </div>
         </section>
 
+        {{-- Estilos de Chatbot --}}
+        <script>
+            var botmanWidget = {
+                frameEndpoint: '/botman/chat',
+                title: "DYSMATH",
+                placeholderText: "Escribe aquí...",
+                introMessage: "Hola, soy tu asistente virtual",
+                mainColor: "#ab49cc",
+                bubbleBackground: "#5e5e5e",
+                
+                
+            };
+        </script>
+
+        <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
+
 </x-app-layout>
 
 {{--<!DOCTYPE html>
