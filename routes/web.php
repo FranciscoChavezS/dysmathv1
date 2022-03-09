@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CourseController;
@@ -8,6 +9,7 @@ use Illuminate\Routing\RouteGroup;
 use App\Http\Controllers\BotManController;
 use App\Models\User;
 use Laravel\Socialite\Facades\Socialite;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -39,23 +41,5 @@ Route::get('botman',[BotManController::class,'handle'])->name('handle');
 
 Route::post('botman',[BotManController::class,'handle'])->name('handle');
 
-Route::get('/auth/{driver}', function ($driver) {
-    return Socialite::driver('facebook')->redirect();
-});
- 
-Route::get('/auth/{driver}/callback', function ($driver) {
-    $facebookUser = Socialite::driver('facebook')->user();
-
-    $user = User::create([
-        'email' => $facebookUser->getEmail(),
-        'name' => $facebookUser->getName(),
-        'provider_id' => $facebookUser->getId(),
-
-    ]);
-
-    auth()->login($user, true);
-
-    //Redireccionar
-    return redirect('dashboard');
-    
-});
+Route::get('login/{driver}',[LoginController::class,'redirectToProvider']);
+Route::get('login/{driver}/callback', [LoginController::class,'handleProviderCallback']);
