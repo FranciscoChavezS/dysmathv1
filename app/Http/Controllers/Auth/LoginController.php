@@ -13,7 +13,7 @@ class LoginController extends Controller
 {
     public function login($driver)
     {
-        $drivers = ['facebook'];
+        $drivers = ['facebook', 'google'];
 
         if(in_array($driver, $drivers)){
             return Socialite::driver($driver)->redirect();
