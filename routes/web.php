@@ -6,6 +6,8 @@ use App\Http\Controllers\CourseController;
 use App\Http\Livewire\CourseStatus;
 use Illuminate\Routing\RouteGroup;
 use App\Http\Controllers\BotManController;
+use App\Models\User;
+use Laravel\Socialite\Facades\Socialite;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,3 +38,24 @@ Route::get('courses-status/{course}', CourseStatus::class)->name('courses.status
 Route::get('botman',[BotManController::class,'handle'])->name('handle');
 
 Route::post('botman',[BotManController::class,'handle'])->name('handle');
+
+Route::get('/auth/facebook/redirect', function () {
+    return Socialite::driver('facebook')->redirect();
+});
+ 
+Route::get('/auth/facebook/callback', function () {
+    $facebookUser = Socialite::driver('facebook')->user();
+
+    $user = User::create([
+        'email' => $facebookUser->getEmail(),
+        'name' => $facebookUser->getName(),
+        'provider_id' => $facebookUser->getId(),
+
+    ]);
+
+    auth()->login($user, true);
+
+    //Redireccionar
+    return redirect('dashboard');
+    
+});
