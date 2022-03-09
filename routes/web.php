@@ -39,11 +39,11 @@ Route::get('botman',[BotManController::class,'handle'])->name('handle');
 
 Route::post('botman',[BotManController::class,'handle'])->name('handle');
 
-Route::get('/auth/facebook/redirect', function () {
+Route::get('/auth/{driver}', function ($driver) {
     return Socialite::driver('facebook')->redirect();
 });
  
-Route::get('/auth/facebook/callback', function () {
+Route::get('/auth/{driver}/callback', function ($driver) {
     $facebookUser = Socialite::driver('facebook')->user();
 
     $user = User::create([
