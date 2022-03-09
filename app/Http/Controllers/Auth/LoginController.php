@@ -34,22 +34,22 @@ class LoginController extends Controller
             return redirect()->route('login');
         }
 
-
         $userSocialite = Socialite::driver($driver)->user();
-
-        $user = User::where('email', $userSocialite->getEmail())->first();
-
-        if(!$user){
-            $user = User::create([
-                'name' => $userSocialite->getName(),
-                'email' => $userSocialite->getEmail(),
-            ]);
-        }
 
         $social_profile = SocialProfile::where('social_id', $userSocialite->getId())
                                         ->where('social_name', $driver)->first();
         
         if(!$social_profile){
+
+            $user = User::where('email', $userSocialite->getEmail())->first();
+
+            if(!$user){
+                $user = User::create([
+                    'name' => $userSocialite->getName(),
+                    'email' => $userSocialite->getEmail(),
+                ]);
+            }
+
             SocialProfile::create([
                 'user_id' => $user->id,
                 'social_id' => $userSocialite->getId(),
@@ -58,7 +58,7 @@ class LoginController extends Controller
             ]);
         }
 
-        auth()->login($user);
+        auth()->login($social_profile->user);
 
         return redirect()->route('home');
 
