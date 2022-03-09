@@ -97,6 +97,8 @@
                 introMessage: "Hola, soy tu asistente virtual",
                 mainColor: "#ab49cc",
                 bubbleBackground: "#5e5e5e",
+                mobileHeight: '100%',
+                mobileWidth: '300px',
                 
                 
             };
