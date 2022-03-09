@@ -9,9 +9,9 @@ use Laravel\Socialite\Facades\Socialite;
 
 class LoginController extends Controller
 {
-    public function redirectToProvider($driver)
+    public function login()
     {
-        return Socialite::driver($driver)->redirect();
+        return Socialite::driver('facebook')->redirect();
     }
  
     /**
@@ -19,9 +19,9 @@ class LoginController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function handleProviderCallback($driver)
+    public function handleProviderCallback()
     {
-        $user = Socialite::driver($driver)->user();
+        $user = Socialite::driver('facebook')->user();
 
         dd($user);
         // $user->token;

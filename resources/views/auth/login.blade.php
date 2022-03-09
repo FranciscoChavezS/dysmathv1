@@ -22,7 +22,7 @@
             </span>
         </a>
 
-        <a href="{{url('login/facebook')}}" class="flex items-center justify-center mt-4 text-gray-600 border rounded-lg dark:bg-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+        <a href="{{route('login.facebook')}}" class="flex items-center justify-center mt-4 text-gray-600 border rounded-lg dark:bg-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
             <div class="px-4 py-2">
                 <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/000000/external-famous-social-media-online-social-media-and-social-networking-service-facebook-logo-color-tal-revivo.png"/>
             </div>

@@ -41,5 +41,6 @@ Route::get('botman',[BotManController::class,'handle'])->name('handle');
 
 Route::post('botman',[BotManController::class,'handle'])->name('handle');
 
-Route::get('login/{driver}',[LoginController::class,'redirectToProvider']);
-Route::get('login/{driver}/callback', [LoginController::class,'handleProviderCallback']);
+Route::get('login/facebook',[LoginController::class,'login'])->name('login.facebook');
+
+Route::get('login/facebook/callback', [LoginController::class,'callback']);
