@@ -13,7 +13,13 @@ class LoginController extends Controller
 {
     public function login($driver)
     {
-        return Socialite::driver($driver)->redirect();
+        $drivers = ['facebook'];
+
+        if(in_array($driver, $drivers)){
+            return Socialite::driver($driver)->redirect();
+        }else{
+            return redirect()->route('login')->with('info', $driver . ' no es una aplicación valida para poder loguearse');
+        }
     }
  
     /**
@@ -21,8 +27,14 @@ class LoginController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function callback($driver)
+    public function callback(Request $request, $driver)
     {
+
+        if($request->get('error')){
+            return redirect()->route('login');
+        }
+
+
         $userSocialite = Socialite::driver($driver)->user();
 
         $user = User::where('email', $userSocialite->getEmail())->first();
