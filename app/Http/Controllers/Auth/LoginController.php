@@ -48,7 +48,7 @@ class LoginController extends Controller
 
         auth()->login($user);
 
-        return redirect()->route('home');
+        return redirect()->route('dashboard');
 
         
         // $user->token;
