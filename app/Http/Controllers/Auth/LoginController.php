@@ -5,13 +5,15 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
+use App\Models\User;
+use App\Models\SocialProfile;
 
 
 class LoginController extends Controller
 {
-    public function login()
+    public function login($driver)
     {
-        return Socialite::driver('facebook')->redirect();
+        return Socialite::driver($driver)->redirect();
     }
  
     /**
@@ -19,11 +21,21 @@ class LoginController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function callback()
+    public function callback($driver)
     {
-        $user = Socialite::driver('facebook')->user();
+        $userSocialite = Socialite::driver($driver)->user();
 
-        return $user->getName();
+        $user = User::create([
+            'name' => $userSocialite->getName(),
+            'email' => $userSocialite->getEmail(),
+        ]);
+
+        SocialProfile::create([
+            'user_id' => $user->id,
+            'social_id' => $userSocialite->getId(),
+            'social_name' => $driver,
+            'social_avatar' => $userSocialite->getAvatar()
+        ]);
         // $user->token;
     }
 }

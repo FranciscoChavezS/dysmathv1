@@ -10,6 +10,14 @@ class SocialProfile extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'user_id',
+        'social_id',
+        'social_name',
+        'social_avatar'
+        
+    ];
+
     public function user(){
         $this->belongsTo(User::class);
     }
