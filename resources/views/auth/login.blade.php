@@ -18,7 +18,7 @@
             </div>
         @endif
 
-        <a href="{{url('login/facebook')}}" class="flex items-center justify-center mt-4 text-gray-600 border rounded-lg dark:bg-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+        <a href="{{url('login/google')}}" class="flex items-center justify-center mt-4 text-gray-600 border rounded-lg dark:bg-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
         <div class="px-4 py-2">
             <img src="https://img.icons8.com/color/28/000000/google-logo.png"/>
         </div>
