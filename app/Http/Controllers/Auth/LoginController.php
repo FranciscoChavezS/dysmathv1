@@ -25,17 +25,32 @@ class LoginController extends Controller
     {
         $userSocialite = Socialite::driver($driver)->user();
 
-        $user = User::create([
-            'name' => $userSocialite->getName(),
-            'email' => $userSocialite->getEmail(),
-        ]);
+        $user = User::where('email', $userSocialite->getEmail())->first();
 
-        SocialProfile::create([
-            'user_id' => $user->id,
-            'social_id' => $userSocialite->getId(),
-            'social_name' => $driver,
-            'social_avatar' => $userSocialite->getAvatar()
-        ]);
+        if(!$user){
+            $user = User::create([
+                'name' => $userSocialite->getName(),
+                'email' => $userSocialite->getEmail(),
+            ]);
+        }
+
+        $social_profile = SocialProfile::where('social_id', $userSocialite->getId())
+                                        ->where('social_name', $driver)->first();
+        
+        if(!$social_profile){
+            SocialProfile::create([
+                'user_id' => $user->id,
+                'social_id' => $userSocialite->getId(),
+                'social_name' => $driver,
+                'social_avatar' => $userSocialite->getAvatar()
+            ]);
+        }
+
+        auth()->login($user);
+
+        return redirect()->route('home');
+
+        
         // $user->token;
     }
 }
