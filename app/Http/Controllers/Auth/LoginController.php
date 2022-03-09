@@ -19,7 +19,7 @@ class LoginController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function handleProviderCallback()
+    public function callback()
     {
         $user = Socialite::driver('facebook')->user();
 
