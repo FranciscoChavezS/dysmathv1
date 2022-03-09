@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\SocialProfile;
 
 
 use Spatie\Permission\Traits\HasRoles;
@@ -99,6 +100,11 @@ class User extends Authenticatable
     
         public function lessons(){
             return $this->belongsToMany('App\Models\Lesson');
+        }
+
+        //Relación uno a muchos 
+        public function socialProfiles(){
+            return $this->hasMany(SocialProfile::class);
         }
 
 
