@@ -31,7 +31,7 @@
             @endif
 
             <!-- Page Content -->
-            <div class="container py-8 grid grid-cols-5 gap-6">
+            <div class="container py-12 grid md:grid-cols-5 md:gap-8 ">
                 <aside>
                     <h1 class="folt-bold text-lg mb-4">Edicion del curso</h1>
         {{--routeIs para metodo link activo--}}
@@ -60,12 +60,12 @@
                         <form action="{{route('instructor.courses.status', $course)}}" method="post">
                             @csrf
     
-                            <button class="btn btn-danger"type="submit">solicitar revision</button>
+                            <button class="btn btn-danger w-full col-span-4"type="submit">solicitar revision</button>
                         </form>
                             @break
                         @case(2)
                         <div class="card text-gray-500">
-                            <div class="card-body">
+                            <div class="card-body flex-1 mb-4 col-span-4">
                                 Este curso se encuentra en revision
                             </div>
                         </div>
@@ -73,7 +73,7 @@
                             @break
                         @case(3)
                         <div class="card text-gray-500">
-                            <div class="card-body">
+                            <div class="card-body flex-1 mb-4 col-span-4">
                                 Este curso se encuentra publicado
                             </div>
                         </div>
@@ -85,7 +85,7 @@
                    
 
                 </aside>
-                <div class="col-span-4 card">
+                <div class="col-span-4 card mt-4">
                     <main class="card-body text-gray-600">
                         {{$slot}}
                     </main>

@@ -47,8 +47,8 @@
     </div>
 
 </div>
-<h1 class="text-2xl font-bold mt-8 mb-2">Imagen del curso</h1>
-<div class="grid grid-cols-2 gap-4">
+<h1 class="text-2xl font-bold mb-8">Imagen del curso</h1>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
     <figure>
         @isset($course->image)
             <img id="picture" class="w-full h-64 object-cover object-center" src="{{Storage::url($course->image->url)}}" alt="">

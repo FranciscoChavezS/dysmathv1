@@ -29,7 +29,7 @@
                     <tr>
                         <td>{{$course->id}}</td>
                         <td>{{$course->title}}</td>
-                        <td>{{$course->category->name}}</td>
+                        <td width="1000px">{{$course->category->name}}</td>
                         <td>
                             <a class="btn btn-primary" href="{{route('admin.courses.show',$course)}}">Revisar</a>
                         </td>
