@@ -14,31 +14,33 @@
        </div>
     @endif
     <div class="md:col-span-4 card mt-4">
-        <div class="card-body">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Titulo</th>
-                        <th>Categoria</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($courses as $course)
-                    <tr>
-                        <td>{{$course->id}}</td>
-                        <td>{{$course->title}}</td>
-                        <td width="1000px">{{$course->category->name}}</td>
-                        <td>
-                            <a class="btn btn-primary" href="{{route('admin.courses.show',$course)}}">Revisar</a>
-                        </td>
-                        
-                    </tr>
-                        
-                    @endforeach
-                </tbody>
-            </table>
+        <div class="table-responsive">
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Titulo</th>
+                            <th>Categoria</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($courses as $course)
+                        <tr>
+                            <td>{{$course->id}}</td>
+                            <td>{{$course->title}}</td>
+                            <td width="10px">{{$course->category->name}}</td>
+                            <td>
+                                <a class="btn btn-primary" href="{{route('admin.courses.show',$course)}}">Revisar</a>
+                            </td>
+                            
+                        </tr>
+                            
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <div class="card-footer">

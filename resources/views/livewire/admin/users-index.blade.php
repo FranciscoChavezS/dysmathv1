@@ -1,15 +1,16 @@
 <div>
- <div class="card">
+ <div class="md:col-span-4 card mt-4">
      <div class="card-header">
         <input wire:Keydown='limpiar_page' wire:model="search"class='form-control w-100' placeholder='Escriba un nombre...'>
      </div>
      @if ($users->count())
          
     
+     <div class="table-responsive">
         <div class="card-body">
-            <table class="table table-striped table-responsive">
+            <table class="table table-striped">
                 <thead>
-                    <tr class="text-center">
+                    <tr>
                         <th>ID</th>
                         <th>Nombre</th>
                         <th>Email</th>
@@ -21,9 +22,9 @@
                     @foreach ($users as $user)
                         <tr>
                             <td>{{ $user->id}}</td>
-                            <td width="250px">{{ $user->name}}</td>
-                            <td width="250px" class="text-center">{{ $user->email}}</td>
-                            <td width="1000px" class="text-center">
+                            <td>{{ $user->name}}</td>
+                            <td>{{ $user->email}}</td>
+                            <td>
                                 @foreach($user->roles as $role)
                                   {{ $role->name }}
                                 @endforeach
@@ -38,6 +39,7 @@
                 </tbody>
             </table>
         </div>
+    </div>
         <div class="card-footer">
             {{$users->links()}}
         </div>

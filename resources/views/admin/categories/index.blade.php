@@ -15,13 +15,14 @@
     </div>
     @endif
    <div class="md:col-span-4 card mt-4">
+    <div class="table-responsive">
        <div class="card-body">
                 <table class="table table-striped">
                     <thead>
                         <tr>
                             <th>ID</th>
                             <th>Nombre</th>
-                            <th colspan= '2'></th>
+                            <th colspan='2'></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -30,24 +31,25 @@
                                 <td>
                                     {{$category->id}}
                                 </td>
-                                <td width="1000px">
+                                <td>
                                     {{$category->name}}
                                 </td>
                                 <td width="10px">
-                                    <a class="btn btn-primary btn-sm" href="{{route('admin.categories.edit',$category)}}">Editar</a>
+                                    <a class="btn btn-primary" href="{{route('admin.categories.edit',$category)}}">Editar</a>
                                 </td>
                                 <td width="10px">
                                     <form action="{{route('admin.categories.destroy',$category->id)}}" method="post">
                                         @csrf
                                         @method('delete')
 
-                                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                                        <button class="btn btn-danger">Eliminar</button>
                                     </form>
                                 </td>
                             </tr>
                         @endforeach
                     </tbody>
                 </table>
+            </div>
         </div>
    </div>
 @stop
