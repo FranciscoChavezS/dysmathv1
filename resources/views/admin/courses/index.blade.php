@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', '¡Course')
+@section('title', 'Dysmath')
 
 @section('content_header')
     <h1>Cursos pendientes de aprobacion.</h1>

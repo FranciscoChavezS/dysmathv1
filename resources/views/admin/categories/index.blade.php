@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', '¡Course')
+@section('title', 'Dysmath')
 
 @section('content_header')
 <a class="btn btn-secondary btn-sm float-right" href="{{route('admin.categories.create')}}">Crear categoria</a>

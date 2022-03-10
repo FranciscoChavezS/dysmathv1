@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', '¡Course')
+@section('title', 'Dysmath')
 
 @section('content_header')
-    <h1>¡Course admin panel.</h1>
+    <h1>Dysmath admin panel.</h1>
 @stop
 
 @section('content')
