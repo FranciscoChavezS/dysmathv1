@@ -14,9 +14,9 @@
         {{session('info')}}
     </div>
     @endif
-   <div class="card">
+   <div class="md:col-span-4 card mt-4">
        <div class="card-body">
-                <table class="table table-striped table-responsive">
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <th>ID</th>
