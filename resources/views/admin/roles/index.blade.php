@@ -18,7 +18,7 @@
             <a href="{{route('admin.roles.create')}}">Crear curso</a>
         </div>
         <div class="card-body">
-            <table class="table table-striped">
+            <table class="table table-striped table-responsive">
                 <thead>
                     <tr>
                         <th>ID</th>

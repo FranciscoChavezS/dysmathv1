@@ -19,7 +19,7 @@
 
 <div class="card">
     <div class="card-body">
-        <table class="table table-striped">
+        <table class="table table-striped table-responsive">
              <thead>
                  <tr>
                      <th>ID</th>
@@ -33,7 +33,7 @@
                          <td>
                              {{$price->id}}
                          </td>
-                         <td>
+                         <td width="1000px">
                              {{$price->name}}
                          </td>
 

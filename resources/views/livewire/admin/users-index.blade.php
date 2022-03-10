@@ -7,9 +7,9 @@
          
     
         <div class="card-body">
-            <table class="table table-striped">
+            <table class="table table-striped table-responsive">
                 <thead>
-                    <tr>
+                    <tr class="text-center">
                         <th>ID</th>
                         <th>Nombre</th>
                         <th>Email</th>
@@ -21,9 +21,9 @@
                     @foreach ($users as $user)
                         <tr>
                             <td>{{ $user->id}}</td>
-                            <td>{{ $user->name}}</td>
-                            <td>{{ $user->email}}</td>
-                            <td>
+                            <td width="250px">{{ $user->name}}</td>
+                            <td width="250px" class="text-center">{{ $user->email}}</td>
+                            <td width="1000px" class="text-center">
                                 @foreach($user->roles as $role)
                                   {{ $role->name }}
                                 @endforeach
