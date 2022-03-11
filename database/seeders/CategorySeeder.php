@@ -15,15 +15,15 @@ class CategorySeeder extends Seeder
     {
         //
         Category::create([
-            'name' => 'Desarrollo web'
+            'name' => 'Concepto de Números'
         ]);
 
         Category::create([
-            'name' => 'Diseño web'
+            'name' => 'Operaciones Básicas'
         ]);
 
         Category::create([
-            'name' => 'Programación'
+            'name' => 'Serie de Números'
         ]);
     }
 }

@@ -53,7 +53,7 @@
         @isset($course->image)
             <img id="picture" class="w-full h-64 object-cover object-center" src="{{Storage::url($course->image->url)}}" alt="">
         @else
-            <img id="picture" class="w-full h-64 object-cover object-center" src="https://images.pexels.com/photos/4497759/pexels-photo-4497759.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+            <img id="picture" class="w-full h-64 object-cover object-center" src="http://becas-mexico.mx/wp-content/themes/swift/images/default.png" alt="">
         @endisset
     </figure>
 

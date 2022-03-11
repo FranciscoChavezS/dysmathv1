@@ -42,7 +42,7 @@
                                 <img class="h-10 w-10 rounded-full object-cover object-center" src="{{Storage::url($course->image->url)}}" alt="">
 
                                 @else
-                                <img class="h-10 w-10 rounded-full object-cover object-center" src="https://images.pexels.com/photos/4498362/pexels-photo-4498362.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                                <img class="h-10 w-10 rounded-full object-cover object-center" src="http://becas-mexico.mx/wp-content/themes/swift/images/default.png" alt="">
                                     
                                 @endisset
                                 </div>
