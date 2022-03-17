@@ -246,14 +246,14 @@ return [
         [
             'text'        => 'Dashboard',
             'route'         => 'admin.home',
-            'icon'        => 'fas fa-fw fa-user-cog',
+            'icon'        => 'fas fa-fw fa-tachometer-alt',
             'can'  => 'Ver dashboard'
            
         ],
         [
             'text'        => 'Lista de roles',
             'route'         => 'admin.roles.index',
-            'icon'        => 'fas fa-fw fa-tachometer-alt',
+            'icon'        => 'fas fa-fw fa-user-shield',
             'can'  =>'Listar role',
             'active' =>['admin/roles*']
            
@@ -270,7 +270,7 @@ return [
         [
             'text' => 'Categorias',
             'route'  => 'admin.categories.index',
-            'icon' => 'fas fa-fw fa-cogs',
+            'icon' => 'fas fa-fw fa-sliders-h',
         ],
         [
             'text' => 'Niveles',
@@ -280,12 +280,19 @@ return [
         [
             'text' => 'Precios',
             'route'  => 'admin.prices.index',
-            'icon' => 'fab fa-fw fa-cc-visa',
+            'icon' => 'fas fa-fw fa-search-dollar',
         ],
         [
             'text' => 'Pendientes de aprobacion',
             'route'  => 'admin.courses.index',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-check',
+        ],
+         // topnav links
+        [
+            'text'          => 'Ir al sitio',
+            'route'         => 'home',
+            'icon'          => 'fas fa-fw fa-home',
+            'topnav'        => true,
         ],
  
     ],

@@ -15,7 +15,7 @@
 
     <div class="md:col-span-4 card mt-4">
         <div class="card-header">
-            <a href="{{route('admin.roles.create')}}">Añadir Role</a>
+            <a href="{{route('admin.roles.create')}}" class="btn btn-primary">Añadir Role</a>
         </div>
         <div class="table-responsive">
             <div class="card-body">

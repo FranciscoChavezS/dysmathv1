@@ -35,7 +35,7 @@
                     <h1 class="text-center text-xl text-gray-800">Curso laravel </h1>
 
                 </header>
-                <p class="text-sm text-gray-500">Se enseñara la manera correcta de como se maneja el franwork laravel en su version 8</p>
+                <p class="text-sm text-gray-500">Se enseñara la manera correcta de como se maneja el framework laravel en su version 8</p>
             
             </article>
 

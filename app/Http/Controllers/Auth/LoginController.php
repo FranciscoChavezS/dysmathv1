@@ -60,7 +60,7 @@ class LoginController extends Controller
 
         auth()->login($social_profile->user);
 
-        return redirect()->route('home');
+        return redirect()->route('courses.index');
 
         
         // $user->token;
