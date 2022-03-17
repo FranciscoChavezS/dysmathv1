@@ -4,8 +4,8 @@
        
         <div class="py-10 px-6 flex">
 
-            <input wire:Keydown='limpiar_page' wire:model="search" class="form-input flex-1 shadow-sm" placeholder="Escribe un nombre...">
-            <a class="btn btn-danger ml-2" href="{{route('instructor.courses.create')}}">Crear nuevo curso</a>
+            <input wire:Keydown='limpiar_page' wire:model="search" class="form-input flex-1 shadow-sm rounded-lg focus:outline-none px-5 pr-16" placeholder="Buscar curso...">
+            <a class="btn btn-danger ml-2 rounded-md" href="{{route('instructor.courses.create')}}">Crear nuevo curso</a>
         </div>
         @if ($courses->count())
             
@@ -42,13 +42,13 @@
                                 <img class="h-10 w-10 rounded-full object-cover object-center" src="{{Storage::url($course->image->url)}}" alt="">
 
                                 @else
-                                <img class="h-10 w-10 rounded-full object-cover object-center" src="http://becas-mexico.mx/wp-content/themes/swift/images/default.png" alt="">
+                                <img class="h-10 w-10 rounded-full object-cover object-center" src="{{ asset('img/home/default.jpg') }}" alt="">
                                     
                                 @endisset
                                 </div>
                                 <div class="ml-4">
                                 <div class="text-sm font-medium text-gray-900">
-                                    {{$course->title}}
+                                    <a class="text-indigo-600 hover:text-indigo-900" href="{{ route('instructor.courses.edit', $course) }}">{{$course->title}}</a>
                                 </div>
                                 <div class="text-sm text-gray-500">
                                     {{$course->category->name}}

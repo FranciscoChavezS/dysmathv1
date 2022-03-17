@@ -6,7 +6,7 @@
                     <img class="h-60 w-full object-cover" src="{{ Storage::url($course->image->url) }}" alt="">
                 @else
                     <img class="h-60 w-full object-cover"
-                        src="https://images.pexels.com/photos/4497759/pexels-photo-4497759.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        src="{{ asset('img/home/default.jpg') }}"
                         alt="">
                 @endif
             </figure>

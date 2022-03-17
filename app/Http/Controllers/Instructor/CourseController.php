@@ -81,7 +81,7 @@ class CourseController extends Controller
 
         
 
-        return redirect()->route('instructor.courses.edit',$course)->with('info','El curso se actualizo con exito');
+        return redirect()->route('instructor.courses.edit',$course)->with('info','El curso se actualizó con exito');
     }
 
     /**
@@ -111,7 +111,7 @@ class CourseController extends Controller
 
 
         
-        return view('instructor.courses.edit',compact('course','categories','levels','prices'))->with('info','El curso se actualizo con exito');
+        return view('instructor.courses.edit',compact('course','categories','levels','prices'))->with('info','El curso se actualizó con exito');
     }
 
     /**
@@ -153,7 +153,7 @@ class CourseController extends Controller
             }
         }
 
-        return redirect()->route('instructor.courses.edit',$course)->with('info','El curso se actualizo con exito');
+        return redirect()->route('instructor.courses.edit',$course)->with('info','El curso se actualizó con exito');
 
     }
 

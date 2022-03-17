@@ -25,9 +25,11 @@
             @livewire('navigation-menu')
 
             @if (session('info'))
-            <div class="alert alert-success bg bg-green-600 mt-4 font-bold text-center text-2xl">
-                {{session('info')}}
-            </div>  
+            <div class="card text-sm mt-2">
+                <div class="card-body flex-1 col-span-4 bg-green-300">
+                   <p class="text-font-bold text-gray-600 text-center text-lg">{{session('info')}}</p>
+                </div>
+            </div> 
             @endif
 
             <!-- Page Content -->
