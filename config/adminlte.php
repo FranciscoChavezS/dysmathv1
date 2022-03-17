@@ -289,7 +289,7 @@ return [
         ],
          // topnav links
         [
-            'text'          => 'Ir al sitio',
+            'text'          => 'Volver',
             'route'         => 'home',
             'icon'          => 'fas fa-fw fa-home',
             'topnav'        => true,
