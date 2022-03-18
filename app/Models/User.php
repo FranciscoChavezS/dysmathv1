@@ -91,6 +91,7 @@ class User extends Authenticatable
         public function reactions(){
             return $this->hasMany('App\Models\Reaction');
         }
+        
     
         //Relacion muchos a muchos
     

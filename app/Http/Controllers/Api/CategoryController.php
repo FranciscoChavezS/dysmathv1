@@ -42,8 +42,10 @@ class CategoryController extends Controller
      * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(Category $category)
+    public function show($id)
     {
+        $category = Category::included()->findOrFail($id);
+
         return $category;
     }
 
