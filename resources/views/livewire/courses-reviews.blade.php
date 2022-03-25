@@ -1,11 +1,11 @@
 <section class="mt-4" >
 
-    <h1 class="font-bold text-3xl text-gray-800">Valoracion del curso</h1>
+    <h1 class="font-bold text-3xl text-gray-800 dark:text-gray-300">Valoracion del curso</h1>
   
     @can('enrolled', $course)
        <article class="mb-4">
         @can('valued', $course)
-                <textarea wire:model="comment" class="form-input w-full rounded-lg" rows="3" placeholder="Ingrese una reseña del curso"></textarea>
+                <textarea wire:model="comment" class="form-input w-full rounded-lg dark:bg-gray-700 dark:placeholder-gray-300" rows="3" placeholder="Ingrese una reseña del curso"></textarea>
                  <div class="flex">
                     <button class="btn btn-primary mr-4" wire:click="store">Guardar</button>
                     <ul class="flex ">
@@ -37,7 +37,7 @@
        </article>
    @endcan
     
-   <p class="text-gray-800 text-xl mb-2">{{$course->reviews->count()}} valoracion(es).</p>
+   <p class="text-gray-800 text-xl mb-2 dark:text-gray-300">{{$course->reviews->count()}} valoracion(es).</p>
 
     <div class="mb-8">
         <div class="">
@@ -47,16 +47,16 @@
                         <img class="h-12 w-12 object-cover rounded-full" src="{{$review->user->profile_photo_url}}" alt="">
                     </figure>
 
-                    <div class="flex-1 bg-gray-50 rounded shadow-inner py-3 px-6">
+                    <div class="flex-1 bg-gray-50 rounded shadow-inner py-3 px-6 dark:bg-gray-600">
                         <div class="flex justify-between items-center mb-2">
-                            <h1 class="text-md font-bold ">{{ $review->user->name }}</h1>
-                            <span class="bg-white px-2 rounded-sm shadow-sm">
+                            <h1 class="text-md font-bold dark:text-gray-300">{{ $review->user->name }}</h1>
+                            <span class="bg-white px-2 rounded-sm shadow-sm dark:bg-gray-500">
                                 <svg class="inline h-4 w-4 text-yellow-400 mr-1" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
                                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                </svg><b>{{ $review->rating }}</b>
+                                </svg><b class="dark:text-gray-300">{{ $review->rating }}</b>
                             </span>
                         </div>
-                        <p>{{ $review->comment }}</p>
+                        <p class="dark:text-gray-300">{{ $review->comment }}</p>
                     </div>
                 </article>
             @endforeach

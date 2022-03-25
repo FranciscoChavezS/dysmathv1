@@ -26,6 +26,7 @@ class LessonFactory extends Factory
             'name' => $this->faker->sentence(),
             'url' => 'https://www.youtube.com/watch?v=B6Vq2AzF4n0',
             'iframe' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/B6Vq2AzF4n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            'juego' => $this->faker->sentence(),    
             'platform_id' => 1
         ];
     }

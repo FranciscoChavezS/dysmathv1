@@ -18,10 +18,10 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="font-sans antialiased ">
+    <body class="font-sans antialiased dark:bg-gray-800">
         <x-jet-banner />
 
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen bg-gray-100 dark:bg-gray-800">
             @livewire('navigation-menu')
 
             @if (session('info'))
@@ -89,7 +89,7 @@
 
                 </aside>
                 <div class="md:col-span-4 card mt-4">
-                    <main class="card-body text-gray-600">
+                    <main class="card-body text-gray-600 dark:bg-gray-800">
                         {{$slot}}
                     </main>
         

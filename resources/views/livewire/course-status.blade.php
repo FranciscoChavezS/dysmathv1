@@ -12,14 +12,14 @@
             </div>
             @endif   
             <div class="flex justify-between mt-4">
-                {{--marcar como culminada--}}
+                {{--marcar como terminada--}}
                 <div class="flex items-center  cursor-pointer" wire:click="completed">
                     @if ($current->completed)
                     <i class="fa fa-toggle-on text-2xl text-blue-600"></i>
                     @else
                         <i class="fa fa-toggle-off text-2xl text-gray-600"></i>
                     @endif
-                    <p class="text-sm ml-2">Marcar unidad como culminada</p>
+                    <p class="text-sm ml-2">Marcar como finalizada</p>
                 </div>
                 @if ($current->resource)
                     <div class="flex items-center text-gray-600 cursor-pointer" wire:click="download">
@@ -53,7 +53,6 @@
                     @endif
                 </div>
             </div>
-           
          
         </div>
 

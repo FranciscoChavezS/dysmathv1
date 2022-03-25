@@ -29,6 +29,10 @@ class Lesson extends Model
         return $this->belongsTo('App\Models\Platform');
     }
 
+    public function games(){
+        return $this->belongsTo('App\Models\Game');
+    }
+
     //Relacion muchos a muchos
     public function users(){
         return $this->belongsToMany('App\Models\User');

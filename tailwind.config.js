@@ -8,6 +8,8 @@ module.exports = {
         './resources/views/**/*.blade.php',
     ],
 
+    darkMode: 'class',
+
     theme: {
         extend: {
             fontFamily: {
@@ -26,4 +28,5 @@ module.exports = {
         container:false,
     },
     plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+    
 };

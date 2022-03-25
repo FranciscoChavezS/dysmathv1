@@ -42,7 +42,7 @@
         <div class="order-2 lg:col-span-2 lg:order-1">
             {{-- metas --}}
             <section class="card mb-12">
-                <div class="card-body">
+                <div class="card-body dark:bg-gray-700">
                     <h1 class="font-bold text-2xl mb-2">Lo que aprenderas</h1>
                     <ul class="grid grid-cols-1 md:grid-cols-2 gap-x6 gap-y-6">
                         @forelse ($course->goals as $goal)

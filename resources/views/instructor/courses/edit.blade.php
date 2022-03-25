@@ -2,7 +2,7 @@
   
 
 
-    <h1 class="text-2xl font-bold mb-8">INFORMACION DEL CURSO</h1>
+    <h1 class="text-2xl font-bold mb-8 dark:text-gray-300">INFORMACION DEL CURSO</h1>
 
  
     <hr class="mb-6 mt-2">
@@ -11,7 +11,7 @@
         
                            @include('instructor.courses.partials.form')
                             <div class="flex justify-end">
-                                {!! Form::submit('Actualizar informacion', ['class' =>'btn btn-primary']) !!}
+                                {!! Form::submit('Actualizar información', ['class' =>'btn btn-primary dark:bg-gray-700']) !!}
         
                             </div>
         

@@ -12,18 +12,18 @@
         </div>
     </section>
     <section class="mt-24">
-        <h1 class="text-gray-600 text-center text-3xl mb-6"> CONTENIDO</h1>
+        <h1 class="text-gray-600 text-center text-3xl mb-6 dark:text-white"> CONTENIDO</h1>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8">
             <article>
-                <figure>
-                    <img class="rounded-xl h-36 w-full object-cover" src="{{asset('img/home/Logo1.png')}}" alt="" />
+                <figure> 
+                    <img class="rounded-xl h-36 w-full object-cover " src="{{asset('img/home/Logo1.png')}}" alt="" />
                 </figure>
                 <header mt-2>
-                    <h1 class="text-center text-xl text-gray-800">Cursos y proyectos</h1>
+                    <h1 class="text-center text-xl text-gray-800 dark:text-white">Cursos y proyectos</h1>
 
                 </header>
-                <p class="text-sm text-gray-500">Los mejores cursos y proyectos dentro del ramo web</p>
+                <p class="text-sm text-gray-500 dark:text-white">Los mejores cursos y proyectos dentro del ramo web</p>
             
             </article>
 
@@ -32,10 +32,10 @@
                     <img class="rounded-xl h-36 w-full object-cover" src="{{asset('img/home/Logo2.png')}}" alt="" />
                 </figure>
                 <header mt-2>
-                    <h1 class="text-center text-xl text-gray-800">Curso laravel </h1>
+                    <h1 class="text-center text-xl text-gray-800 dark:text-white">Curso laravel </h1>
 
                 </header>
-                <p class="text-sm text-gray-500">Se enseñara la manera correcta de como se maneja el framework laravel en su version 8</p>
+                <p class="text-sm text-gray-500 dark:text-white">Se enseñara la manera correcta de como se maneja el framework laravel en su version 8</p>
             
             </article>
 
@@ -44,10 +44,10 @@
                     <img class="rounded-xl h-36 w-full object-cover" src="{{asset('img/home/Logo3.png')}}" alt="" />
                 </figure>
                 <header mt-2>
-                    <h1 class="text-center text-xl text-gray-800">Blog</h1>
+                    <h1 class="text-center text-xl text-gray-800 dark:text-white">Blog</h1>
 
                 </header>
-                <p class="text-sm text-gray-500">Articulos de programacion y desarrollo web, para potenciar tu aprendizaje</p>
+                <p class="text-sm text-gray-500 dark:text-white">Articulos de programacion y desarrollo web, para potenciar tu aprendizaje</p>
             
             </article>
 
@@ -56,19 +56,19 @@
                     <img class="rounded-xl h-36 w-full object-cover" src="{{asset('img/home/Logo4.png')}}" alt="" />
                 </figure>
                 <header mt-2>
-                    <h1 class="text-center text-xl text-gray-800">Desarrollo Web</h1>
+                    <h1 class="text-center text-xl text-gray-800 dark:text-white">Desarrollo Web</h1>
 
                 </header>
-                <p class="text-sm text-gray-500">Si tienes una idea de un desarrollo web contactanos</p>
+                <p class="text-sm text-gray-500 dark:text-gray-300">Si tienes una idea de un desarrollo web contactanos</p>
             
             </article>
         </div>
     </section>
 
-    <section class="mt-24 bg-gray-700 py-12">
+    <section class="mt-24 bg-gray-700 py-12 dark:bg-indigo-800">
        
-        <h1 class="text-center text-white text-3xl">¿No sabes que curso llevar?</h1>
-        <p class="text-center text-white">Dirigete al catalogo de cursos disponible y filtralos por categoria o nivel</p>
+        <h1 class="text-center text-white text-3xl dark:text-white">¿No sabes que curso llevar?</h1>
+        <p class="text-center text-white dark:text-gray-300">Dirigete al catalogo de cursos disponible y filtralos por categoria o nivel</p>
         <div class="flex justify-center mt-4">
             <a href="{{ route('courses.index')}}"  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">
                 Catalogo de cursos
@@ -76,8 +76,8 @@
         </div>
     </section>
     <section class="my-24 ">
-        <h1 class="text-center text-gray-600 text-3xl">ULTIMOS CURSOS</h1>
-            <p class="text-center text-gray-500 text-sm mb-6">REALIZA TU PRUEBA</p>
+        <h1 class="text-center text-gray-600 text-3xl dark:text-white">ULTIMOS CURSOS</h1>
+            <p class="text-center text-gray-500 text-sm mb-6 dark:text-white">REALIZA TU PRUEBA</p>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-x-6 gap-y-8">
                 @foreach($courses as $course)
 

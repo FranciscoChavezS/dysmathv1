@@ -32,7 +32,7 @@
                         <button wire:click="store"class="btn btn-primary text-sm ml-2">Agregar</button>
                     </div>
                 </div>
-
+                
                 @endif
             </div>
         </div>
