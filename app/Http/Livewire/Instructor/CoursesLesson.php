@@ -11,10 +11,11 @@ use phpDocumentor\Reflection\Types\This;
 class CoursesLesson extends Component
 {
 
-    public $section, $lesson, $platforms, $name, $platform_id=1, $url;
+    public $section, $lesson, $platforms, $name, $platform_id=1, $url, $juego;
     protected $rules =[
         'lesson.name' => 'required',
         'lesson.platform_id'=>'required',
+        'lesson.juego' => 'required',
         'lesson.url' => ['required', 'regex:%^ (?:https?://)? (?:www\.)? (?: youtu\.be/ | youtube\.com (?: /embed/ | /v/ | /watch\?v= ) ) ([\w-]{10,12}) $%x'],
     ];
 
@@ -56,6 +57,7 @@ class CoursesLesson extends Component
         $rules =[
             'name' => 'required',
             'platform_id'=>'required',
+            'juego' => 'required',
             'url' => ['required', 'regex:%^ (?:https?://)? (?:www\.)? (?: youtu\.be/ | youtube\.com (?: /embed/ | /v/ | /watch\?v= ) ) ([\w-]{10,12}) $%x'],
         ];
 
@@ -70,9 +72,10 @@ class CoursesLesson extends Component
             'name' => $this->name,
             'platform_id' => $this->platform_id,
             'url' => $this->url,
+            'juego' => $this->juego,
             'section_id'=>$this->section->id
         ]);
-        $this->reset(['name','platform_id','url']);
+        $this->reset(['name','platform_id','juego','url']);
         $this->section = Section::find($this->section->id);
     }
 

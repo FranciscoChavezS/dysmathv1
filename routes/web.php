@@ -7,6 +7,7 @@ use App\Http\Controllers\CourseController;
 use App\Http\Livewire\CourseStatus;
 use Illuminate\Routing\RouteGroup;
 use App\Http\Controllers\BotManController;
+use App\Http\Controllers\gameController;
 use App\Models\User;
 use Laravel\Socialite\Facades\Socialite;
 
@@ -44,3 +45,11 @@ Route::post('botman',[BotManController::class,'handle'])->name('handle');
 Route::get('login/{driver}',[LoginController::class,'login']);
 
 Route::get('login/{driver}/callback', [LoginController::class,'callback']);
+
+Route::get('suma', [gameController::class, 'suma']);
+
+Route::get('resta', [gameController::class, 'resta']);
+
+Route::get('multi', [gameController::class, 'multi']);
+
+Route::get('division', [gameController::class, 'division']);

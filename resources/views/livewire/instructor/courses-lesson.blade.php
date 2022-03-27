@@ -18,6 +18,21 @@
                         @enderror
 
                         <div class="flex item mt-4">
+                            <label class="w-32">Juego: </label>
+                            <select wire:model="lesson.juego" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+
+                                <option value="{{ url('suma') }}">Suma</option>
+                                <option value='{{ url('resta') }}'>Resta</option>
+                                <option value='{{ url('multi') }}'>Multiplicar</option>
+                                <option value='{{ url('division') }}'>Dividir</option>
+                                
+                            </select>
+                        </div>
+                        @error('lesson.juego')
+                            <span class="text-red-500 text-xs">{{$message}}</span>
+                        @enderror
+
+                        <div class="flex item mt-4">
                             <label class="w-32">Plataforma: </label>
                             <select wire:model="lesson.platform_id" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
 
@@ -36,6 +51,7 @@
                         @error('lesson.url')
                             <span class="text-red-500 text-xs">{{$message}}</span>
                         @enderror
+                        
 
                         <div class="mt-4 flex justify-end">
                             <button type="button" class="btn btn-danger" wire:click="cancel">Cancelar</button>
@@ -52,6 +68,7 @@
 
                     <hr class="my-2">
                     <p class="text-sm "> Plataforma: {{$item->platform->name}}</p>
+                    <p class="text-sm "> Ver Juego: <a class="text-blue-600" href="{{$item->juego}}" target="_blank"><button class="h-8 px-4 m-2 text-sm text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800">Mostrar</button></p></a>
                     <p class="text-sm "> Enlace: <a class="text-blue-600" href="{{$item->url}}" target="_blank">{{$item->url}}</a></p> </p>
 
                     <div class="mt-2">
@@ -91,6 +108,23 @@
                     @enderror
 
                     <div class="flex item mt-4">
+                        <label class="w-32">Juego: </label>
+                        <select wire:model="juego" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+
+                            <option value="" disabled>Seleccione un juego</option>
+                            <option value="{{ url('suma') }}" selected="true">Suma</option>
+                            <option value="{{ url('resta') }}">Resta</option>
+                            <option value="{{ url('multi') }}">Multiplica</option>
+                            <option value="{{ url('division') }}">Dividir</option>
+                            
+                            
+                        </select>
+                    </div>
+                    @error('juego')
+                        <span class="text-red-500 text-xs">{{$message}}</span>
+                    @enderror
+
+                    <div class="flex item mt-4">
                         <label class="w-32">Plataforma: </label>
                         <select wire:model="platform_id" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
 
@@ -110,6 +144,9 @@
                     @error('url')
                         <span class="text-red-500 text-xs">{{$message}}</span>
                     @enderror
+
+                   
+
                 </div>
                 <div class="flex justify-end">
                     <button x-on:click="open=false" class="btn btn-danger">Cancelar</button>

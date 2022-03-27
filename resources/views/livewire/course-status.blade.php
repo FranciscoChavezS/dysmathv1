@@ -5,7 +5,7 @@
                 {{--mostrar video--}}
             {!!$current->iframe!!}
             </div>
-            {{$current->name}}
+            <h1 class="text-gray-600 dark:text-gray-300 tex text-3xl">{{$current->name}}</h1>
             @if ($current->description)
             <div class="text-gray-600">
                 {{$current->description->name}}
@@ -19,7 +19,7 @@
                     @else
                         <i class="fa fa-toggle-off text-2xl text-gray-600"></i>
                     @endif
-                    <p class="text-sm ml-2">Marcar como finalizada</p>
+                    <p class="text-lg ml-2">Marcar como finalizada</p>
                 </div>
                 @if ($current->resource)
                     <div class="flex items-center text-gray-600 cursor-pointer" wire:click="download">
@@ -53,6 +53,19 @@
                     @endif
                 </div>
             </div>
+
+            <div class="card mt-2 mb-4 max-w-7xl grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex ml-2 items-center py-5">
+                    <figure class="flex-shrink-0 mr-4">
+                        <a href="{{$current->juego}}"><button type="button" class="w-96 border-b-4 border-gray-700 text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-md px-5 py-2.5 text-center mr-2 mb-2">Jugar</button></a>
+                    </figure>
+                    <div class="flex grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+                        <img src="{{asset('img/home/perro1.png')}}" class="h-14 w-20 object-cover mr-12 ml-4" alt="">
+                        <img src="{{asset('img/home/perro2.png')}}" class="h-16 w-14 object-cover mr-12" alt="">
+                        <img src="{{asset('img/home/perro3.png')}}" class="h-14 w-20 object-cover mr-12" alt="">
+                    </div>
+                </div>
+            </div>
          
         </div>
 
@@ -75,7 +88,7 @@
                 </div>
             
                 {{-- Muestra el perfil del alumno y su progreso --}}
-            <div class="card">
+            <div class="card mb-8">
                 <div class="card-body">
                     <a href="{{route('courses.show', $course)}}" class="no-underline hover:underline text-indigo-500"><h1 class="text-2xl leading-8 text-center mb-4">{{$course->title}}</h1></a>
                     <div class="flex items-center">

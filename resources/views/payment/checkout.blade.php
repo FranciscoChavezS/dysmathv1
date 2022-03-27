@@ -16,7 +16,7 @@
 
                 </div>
                 <hr>
-                <p class="text-sm mt-4">La empresa !course junto a sus asociados y profesores se reservan el derecho a reembolsar la cantidad de dinero despues de 30 dias <a class="text-red-500 font-bold">Terminos & Condiciones </a></p>
+                <p class="text-sm mt-4">La empresa Dysmath junto a sus asociados y profesores se reservan el derecho a reembolsar la cantidad de dinero despues de 30 dias <a class="text-red-500 font-bold">Terminos & Condiciones </a></p>
             </div>
         </div>
     </div>
