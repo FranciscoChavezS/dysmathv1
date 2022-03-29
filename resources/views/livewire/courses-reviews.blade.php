@@ -1,7 +1,7 @@
 <section class="mt-4" >
 
-    <h1 class="font-bold text-3xl text-gray-800 dark:text-gray-300">Valoracion del curso</h1>
-  
+    <h1 class="font-bold text-3xl text-gray-800 dark:text-gray-300">Reseñas de estudiantes</h1>
+    
     @can('enrolled', $course)
        <article class="mb-4">
         @can('valued', $course)
@@ -37,12 +37,24 @@
        </article>
    @endcan
     
-   <p class="text-gray-800 text-xl mb-2 dark:text-gray-300">{{$course->reviews->count()}} valoracion(es).</p>
-
+   <div class="grid grid-cols-1 sm:grid-cols-4 gap-2 sm:gap-6 items-center mb-4">
+       <div class="text-center text-yellow-400">
+           <p class="text-6xl font-bold">{{$course->rating}}</p>
+           <ul class="flex items-center space-x-1 text-xs justify-center">
+                <li><i class="fa fa-star text-{{$course->rating>=1 ? 'yellow': 'gray'}}-400"></i></li>
+                <li><i class="fa fa-star text-{{$course->rating>=2 ? 'yellow': 'gray'}}-400"></i></li>
+                <li><i class="fa fa-star text-{{$course->rating>=3 ? 'yellow': 'gray'}}-400"></i></li>
+                <li><i class="fa fa-star text-{{$course->rating>=4 ? 'yellow': 'gray'}}-400"></i></li>
+                <li><i class="fa fa-star text-{{$course->rating==5 ? 'yellow': 'gray'}}-400"></i></li>
+           </ul>
+           <p class="text-lg font-semibold mb-2">{{$course->reviews->count()}} valoracion(es).</p>
+       </div>
+   </div>
+   <hr>
     <div class="mb-8">
         <div class="">
             @foreach ($course->reviews as $review)
-                <article class="flex mb-4 text-gray-800 ">
+                {{-- <article class="flex mb-4 text-gray-800 ">
                     <figure class="mr-6">
                         <img class="h-12 w-12 object-cover rounded-full" src="{{$review->user->profile_photo_url}}" alt="">
                     </figure>
@@ -56,9 +68,41 @@
                                 </svg><b class="dark:text-gray-300">{{ $review->rating }}</b>
                             </span>
                         </div>
+                        
                         <p class="dark:text-gray-300">{{ $review->comment }}</p>
                     </div>
-                </article>
+                </article> --}}
+
+                <ul class="space-y-6 mt-8 mb-8">
+                    <li wire:key="review-447">
+                        <div class="flex">
+                            <figure class="flex-shrink-0 mr-4">
+                                <img class="w-10 h-10 sm:w-12 sm:h-12 object-cover rounded-full shadow" src="{{$review->user->profile_photo_url}}" alt="">
+                            </figure>
+                                <div class="w-[calc(100%-3.5rem)] sm:w-[calc(100%-4rem)]">
+                                    <div class="flex">
+                                        <div class="w-[calc(100%-2rem)]">
+                                            <p class="font-semibold dark:text-gray-300">{{ $review->user->name }}</p>
+                                        
+                                        <div class="flex items-center">
+                                            <ul class="flex items-center space-x-1 text-xs">
+                                                <li><i class="fa fa-star text-{{$review->rating>=1 ? 'yellow': 'gray'}}-400"></i></li>
+                                                <li><i class="fa fa-star text-{{$review->rating>=2 ? 'yellow': 'gray'}}-400"></i></li>
+                                                <li><i class="fa fa-star text-{{$review->rating>=3 ? 'yellow': 'gray'}}-400"></i></li>
+                                                <li><i class="fa fa-star text-{{$review->rating>=4 ? 'yellow': 'gray'}}-400"></i></li>
+                                                <li><i class="fa fa-star text-{{$review->rating==5 ? 'yellow': 'gray'}}-400"></i></li>
+                                            </ul>
+                                            <p class="font-normal text-sm ml-1 dark:text-gray-300">{{$review->created_at->diffForHumans()}}</p>
+                                        </div>
+                                        <div class="my-1 text-sm relative">
+                                            <p class="text-gray-700 text-sm dark:text-gray-300">{{ $review->comment }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             @endforeach
         </div>
     </div>

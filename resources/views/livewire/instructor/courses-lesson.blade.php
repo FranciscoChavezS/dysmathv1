@@ -114,7 +114,7 @@
                             <option value="" disabled>Seleccione un juego</option>
                             <option value="{{ url('suma') }}" selected="true">Suma</option>
                             <option value="{{ url('resta') }}">Resta</option>
-                            <option value="{{ url('multi') }}">Multiplica</option>
+                            <option value="{{ url('multi') }}">Multiplicar</option>
                             <option value="{{ url('division') }}">Dividir</option>
                             
                             
