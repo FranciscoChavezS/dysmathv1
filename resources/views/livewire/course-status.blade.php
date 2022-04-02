@@ -17,7 +17,11 @@
                     @if ($current->completed)
                     <i class="fa fa-toggle-on text-2xl text-blue-600 dark:text-blue-500"></i>
                     @else
+<<<<<<< HEAD
                         <i class="fa fa-toggle-off text-2xl text-gray-600 dark:text-gray-300"></i>
+=======
+                        <i class="fa fa-toggle-off text-2xl text-gray-600 dark:text-white"></i>
+>>>>>>> 9299490e60a4b386198ab947063db3d3be708159
                     @endif
                     <p class="text-lg ml-2 dark:text-pink-300">Marcar como finalizada</p>
                 </div>
@@ -34,7 +38,7 @@
             <div class="flex justify-between items-center mt-5">
                 <div>
                     @if ($this->previous)
-                        <button wire:click="changeLesson({{ $this->previous }})" class="block bg-white shadow h-12 px-4 rounded-lg text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 mr-2 lg:mr-4 mb-2">
+                        <button wire:click="changeLesson({{ $this->previous }})" class="block dark:text-white bg-white shadow h-12 px-4 rounded-lg text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 mr-2 lg:mr-4 mb-2 dark:bg-gray-700">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="inline text-xs text-gray-400 mr-1" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
                             </svg>
@@ -42,16 +46,16 @@
                         </button>
                     @endif
                 </div>
+
                 <div class="mt-2 mb-4">
                     <div class="flex ml-2 items-center py-5">
                         <figure class="flex-shrink-0 mr-4">
                             <a href="{{$current->juego}}"><button type="button" class="lg:w-96 md:w-76 sm:w-48 border-b-4 border-gray-700 text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-md px-5 py-2.5 text-center mr-2 mb-2">Jugar</button></a>
                         </figure>
-                    </div>
-                </div>
+
                 <div>
                     @if ($this->next)
-                        <button wire:click="changeLesson({{ $this->next }})" class="block bg-white shadow h-12 px-4 rounded-lg text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 mr-2 lg:mr-4 mb-2">
+                        <button wire:click="changeLesson({{ $this->next }})" class="block dark:text-white bg-white shadow h-12 px-4 rounded-lg text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 mr-2 lg:mr-4 mb-2 dark:bg-gray-700">
                             Siguiente
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" inline text-xs text-gray-400 ml-1" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -60,7 +64,6 @@
                     @endif
                 </div>
             </div>
-
          
         </div>
 

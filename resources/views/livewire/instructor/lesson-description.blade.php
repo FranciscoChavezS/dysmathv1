@@ -3,7 +3,7 @@
         <div class="card-body">
             <header>
                 <h1 x-on:click='open= !open' class="cursor-pointer">
-                  Descripcion de la leccion  
+                  Descripción de la lección  
                 </h1>
             </header>
             <div x-show='open'>
