@@ -42,7 +42,7 @@
     </div>
 
     <div class="dark:text-gray-300">
-        {!! Form::label('price_id', 'Precios: ') !!}
+        {!! Form::label('price_id', 'Edad: ') !!}
         {!! Form::select('price_id',$prices,null,['class' => 'form-input block w-full mt-1 dark:bg-gray-700']) !!}
     </div>
 

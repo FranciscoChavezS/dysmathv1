@@ -3,8 +3,8 @@
 @section('title', 'Dysmath')
 
 @section('content_header')
-<a class="btn btn-secondary btn-sm float-right" href="{{route('admin.prices.create')}}">Agregar precio</a>
-    <h1>Lista de precios</h1>
+<a class="btn btn-secondary btn-sm float-right" href="{{route('admin.prices.create')}}">Agregar Edad</a>
+    <h1>Lista de edades</h1>
 @stop
 
 @section('content')

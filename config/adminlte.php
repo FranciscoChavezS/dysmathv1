@@ -278,7 +278,7 @@ return [
             'icon' => 'fas fa-fw fa-chart-line',
         ],
         [
-            'text' => 'Precios',
+            'text' => 'Edades',
             'route'  => 'admin.prices.index',
             'icon' => 'fas fa-fw fa-search-dollar',
         ],

@@ -43,7 +43,7 @@ class PriceController extends Controller
         ]);
 
         $price = Price::create($request->all());
-        return redirect()->route('admin.prices.edit', compact('price'))->with('info','El precio se creo con exito');
+        return redirect()->route('admin.prices.edit', compact('price'))->with('info','La edad se creo con exito');
     }
 
     /**
@@ -95,7 +95,7 @@ class PriceController extends Controller
     public function destroy(Price $price)
     {
         $price->delete();
-        return redirect()->route('admin.prices.index')->with('info','El precio se elimino con exito');
+        return redirect()->route('admin.prices.index')->with('info','La edad se elimino con exito');
       
     }
 }

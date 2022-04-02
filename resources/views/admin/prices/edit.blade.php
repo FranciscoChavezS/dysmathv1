@@ -3,7 +3,7 @@
 @section('title', 'Dysmath')
 
 @section('content_header')
-    <h1>Editar precios</h1>
+    <h1>Editar Edad</h1>
 @stop
 
 @section('content')
@@ -33,7 +33,7 @@
                 @enderror
             </div>
 
-            {!! Form::submit('Actualizar precio', ['class'=> 'btn btn-primary']) !!}
+            {!! Form::submit('Actualizar edad', ['class'=> 'btn btn-primary']) !!}
             
             {!! Form::close() !!}
         </div>

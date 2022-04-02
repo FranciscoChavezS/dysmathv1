@@ -27,7 +27,7 @@
                 @enderror
             </div>
 
-            {!! Form::submit('Crear nuevo precio', ['class'=> 'btn btn-primary']) !!}
+            {!! Form::submit('Crear nueva edad', ['class'=> 'btn btn-primary']) !!}
             
             {!! Form::close() !!}
         </div>
