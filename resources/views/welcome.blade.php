@@ -11,7 +11,7 @@
         </div>
         </div>
     </section>
-    <section class="mt-24">
+    <section class="mt-4">
         <h1 class="text-gray-600 text-center text-3xl mb-6 dark:text-white"> CONTENIDO</h1>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8">
@@ -20,10 +20,10 @@
                     <img class="rounded-xl h-36 w-full object-cover " src="{{asset('img/home/Logo1.png')}}" alt="" />
                 </figure>
                 <header mt-2>
-                    <h1 class="text-center text-xl text-gray-800 dark:text-white">Cursos y proyectos</h1>
+                    <h1 class="text-center text-xl text-gray-800 dark:text-white">OBJETIVO</h1>
 
                 </header>
-                <p class="text-sm text-gray-500 dark:text-white">Los mejores cursos y proyectos dentro del ramo web</p>
+                <p class="text-sm text-gray-500 dark:text-white text-center">Apoyar en el aprendizaje del razonamiento matemático en niños con discalculia de 6 a 9 años</p>
             
             </article>
 
@@ -32,10 +32,10 @@
                     <img class="rounded-xl h-36 w-full object-cover" src="{{asset('img/home/Logo2.png')}}" alt="" />
                 </figure>
                 <header mt-2>
-                    <h1 class="text-center text-xl text-gray-800 dark:text-white">Curso laravel </h1>
+                    <h1 class="text-center text-xl text-gray-800 dark:text-white">ACTIVIDADES</h1>
 
                 </header>
-                <p class="text-sm text-gray-500 dark:text-white">Se enseñara la manera correcta de como se maneja el framework laravel en su version 8</p>
+                <p class="text-sm text-gray-500 dark:text-white text-center">Durante el curso se mostrarán distintas actividades, videos y recursos.</p>
             
             </article>
 
@@ -44,10 +44,10 @@
                     <img class="rounded-xl h-36 w-full object-cover" src="{{asset('img/home/Logo3.png')}}" alt="" />
                 </figure>
                 <header mt-2>
-                    <h1 class="text-center text-xl text-gray-800 dark:text-white">Blog</h1>
+                    <h1 class="text-center text-xl text-gray-800 dark:text-white">GRADOS</h1>
 
                 </header>
-                <p class="text-sm text-gray-500 dark:text-white">Articulos de programacion y desarrollo web, para potenciar tu aprendizaje</p>
+                <p class="text-sm text-gray-500 dark:text-white text-center">Esta página esta destinada a niños de primero a tercero de primaria</p>
             
             </article>
 
@@ -56,16 +56,16 @@
                     <img class="rounded-xl h-36 w-full object-cover" src="{{asset('img/home/Logo4.png')}}" alt="" />
                 </figure>
                 <header mt-2>
-                    <h1 class="text-center text-xl text-gray-800 dark:text-white">Desarrollo Web</h1>
+                    <h1 class="text-center text-xl text-gray-800 dark:text-white">TEMAS</h1>
 
                 </header>
-                <p class="text-sm text-gray-500 dark:text-gray-300">Si tienes una idea de un desarrollo web contactanos</p>
+                <p class="text-sm text-gray-500 dark:text-gray-300 text-center">Los temas estan basados en el programa de estudios de los alumnos</p>
             
             </article>
         </div>
     </section>
 
-    <section class="mt-24 bg-gray-700 py-12 dark:bg-indigo-800">
+    <section class="mt-6 bg-gray-700 py-12 dark:bg-indigo-800">
        
         <h1 class="text-center text-white text-3xl dark:text-white">¿No sabes que curso llevar?</h1>
         <p class="text-center text-white dark:text-gray-300">Dirigete al catalogo de cursos disponible y filtralos por categoria o nivel</p>
@@ -105,6 +105,27 @@
         </script>
 
         <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
+
+        <footer class="text-center text-white" style="background-color: #0a4275;">
+            <div class="container p-6">
+              <div class="">
+                <p class="flex justify-center items-center">
+                  <span class="mr-4 text-black text-2xl font-bold"> <i class="fa fa-user text-yellow-500"></i>CONTACTO DE PSICÓLOGA</span>
+                  <h3 class="font-bold text-white">Romero Cervantes Paola Guadalupe</h3>
+                  <p class="text-white">No. Cédula profesional: 709 641 9 / Ced prof. Estatal PEJ322857</p>
+                  <p class="text-white" >Correo: pgr_3@hotmail.com</p>
+                  <p class="text-white">Consultorio: Calle Hospital 851, CP: 44200 Guadalajara, Jal. México</p>
+                  <p class="text-white">Tel: +52 33 38 25 91 41</p>
+
+                </p>
+              </div>
+            </div>
+          
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2022 Copyright:
+              <a class="text-white" href="#">CUCEI</a>
+            </div>
+          </footer>
 
 </x-app-layout>
 

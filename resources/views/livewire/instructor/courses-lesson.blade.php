@@ -25,6 +25,7 @@
                                 <option value='{{ url('resta') }}'>Resta</option>
                                 <option value='{{ url('multi') }}'>Multiplicar</option>
                                 <option value='{{ url('division') }}'>Dividir</option>
+                                <option value='{{ url('preguntas') }}'>Preguntas</option>
                                 
                             </select>
                         </div>

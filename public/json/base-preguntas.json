@@ -1,0 +1,102 @@
+[
+    {
+        "categoria": "Serie de Números",
+        "pregunta": "¿Cuál es el número que falta?",
+        "respuesta": "4",
+        "incorrecta1": "1",
+        "incorrecta2": "3",
+        "incorrecta3": "2",
+        "imagen": "https://i.ibb.co/WHVPNq0/serie1.jpg",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Serie de Números",
+        "pregunta": "¿Cuál es el siguiente número?",
+        "respuesta": "5",
+        "incorrecta1": "1",
+        "incorrecta2": "2",
+        "incorrecta3": "3",
+        "imagen": "https://i.ibb.co/mtBSnt0/serie10.jpg",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Serie de Números",
+        "pregunta": "¿Cuál es el número que falta?",
+        "respuesta": "2",
+        "incorrecta1": "1",
+        "incorrecta2": "4",
+        "incorrecta3": "3",
+        "imagen": "https://i.ibb.co/7NSvYFp/series11.jpg",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Serie de Números",
+        "pregunta": "¿Cuál es el siguiente número?",
+        "respuesta": "7",
+        "incorrecta1": "2",
+        "incorrecta2": "1",
+        "incorrecta3": "3",
+        "imagen": "https://i.ibb.co/GHtghJH/Whats-App-Image-2022-04-01-at-11-10-18-PM.jpg",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Serie de Números",
+        "pregunta": "¿Cuál es el número que falta?",
+        "respuesta": "1",
+        "incorrecta1": "3",
+        "incorrecta2": "4",
+        "incorrecta3": "6",
+        "imagen": "https://i.ibb.co/gFf8xPc/serie9.jpg",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Serie de Números",
+        "pregunta": "¿Que sigue del número 6?",
+        "respuesta": "7",
+        "incorrecta1": "5",
+        "incorrecta2": "8",
+        "incorrecta3": "1",
+        "imagen": "https://i.ibb.co/GHtghJH/Whats-App-Image-2022-04-01-at-11-10-18-PM.jpg",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Serie de Números",
+        "pregunta": "¿Cuál es el número anterior de la imagen?",
+        "respuesta": "9",
+        "incorrecta1": "10",
+        "incorrecta2": "12",
+        "incorrecta3": "11",
+        "imagen": "https://i.ibb.co/9Zp4L85/serie6.jpg",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Serie de Números",
+        "pregunta": "¿Cuál es el número que falta?",
+        "respuesta": "8",
+        "incorrecta1": "7",
+        "incorrecta2": "3",
+        "incorrecta3": "4",
+        "imagen": "https://i.ibb.co/8gyYtNJ/serie7.jpg",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Serie de Números",
+        "pregunta": "¿Cuál es el siguiente número de 15?",
+        "respuesta": "16",
+        "incorrecta1": "12",
+        "incorrecta2": "18",
+        "incorrecta3": "17",
+        "imagen": "https://i.ibb.co/M8MXkc6/series3.jpg",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Serie de Números",
+        "pregunta": "¿Cuál es el siguiente número?",
+        "respuesta": "12",
+        "incorrecta1": "13",
+        "incorrecta2": "14",
+        "incorrecta3": "11",
+        "imagen": "https://i.ibb.co/nDY0g0n/serie4.jpg",
+        "objectFit": "cover"
+    }
+]

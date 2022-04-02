@@ -99,7 +99,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section class="mb-8">
                 <h1 class="font-bold text-3xl">Descripcion</h1>
                 <div class="text-gray-700 text-base">
                     {!! $course->description !!}

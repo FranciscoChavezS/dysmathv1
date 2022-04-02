@@ -29,4 +29,10 @@ class gameController extends Controller
         return view('games.division');
 
     }
+
+    public function preguntas(){
+
+        return view('games.preguntas');
+
+    }
 }

@@ -34,13 +34,13 @@
           </div>
 
           @if ($course->price->value==0)
-          <p class="my-2 text-green-700 font-bold dark:text-green-400">GRATIS</p>
+          <p class="my-2 text-green-700 font-bold dark:text-green-400">INGRESAR</p>
           @else
           <p class="my-2 text-gray-500 font-bold">$ {{$course->price->value}}</p>
           @endif
           
           <a href="{{route('courses.show',$course)}}" class="btn-block mt-1 btn btn-primary">
-              Mas informacion
+              Mas información
           </a>
       </div>
   </article>
