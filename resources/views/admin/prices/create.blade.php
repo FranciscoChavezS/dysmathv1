@@ -3,7 +3,7 @@
 @section('title', 'Dysmath')
 
 @section('content_header')
-    <h1>Agregar nuevo precio</h1>
+    <h1>Agregar nueva edad</h1>
 @stop
 
 @section('content')

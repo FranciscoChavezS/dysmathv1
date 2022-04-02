@@ -88,7 +88,7 @@
     
                     @else
                     @if ($course->price->value==0)
-                    <p class="text-2xl font-bold text-green-700 mt-3 mb-2">Gratis</p>
+                    <p class="text-2xl font-bold text-green-700 mt-3 mb-2">BIENVENIDO</p>
                         <form action="{{route('courses.enrolled',$course)}}" method="post">
                             @csrf
                             <button  class="btn btn-danger btn-block ">

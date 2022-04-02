@@ -15,23 +15,19 @@ class PriceSeeder extends Seeder
     {
         //
         Price::create([
-            'name' => 'Gratis',
+            'name' => '6-7 años',
             'value' => 0
         ]);
 
         Price::create([
-            'name' => '19.99 US$ (nivel 1)',
-            'value' => 19.99
+            'name' => '7-8 años',
+            'value' => 0
         ]);
 
         Price::create([
-            'name' => '49.99 US$ (nivel 2)',
-            'value' => 49.99
+            'name' => '8-9 años',
+            'value' => 0
         ]);
 
-        Price::create([
-            'name' => '99.99 US$ (nivel 3)',
-            'value' => 99.99
-        ]);
     }
 }
