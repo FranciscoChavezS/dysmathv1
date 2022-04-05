@@ -26,6 +26,7 @@
                                 <option value='{{ url('multi') }}'>Multiplicar</option>
                                 <option value='{{ url('division') }}'>Dividir</option>
                                 <option value='{{ url('preguntas') }}'>Preguntas</option>
+                                <option value='{{ url('bingo') }}'>Bingo</option>
                                 
                             </select>
                         </div>
@@ -118,6 +119,7 @@
                             <option value="{{ url('multi') }}">Multiplicar</option>
                             <option value="{{ url('division') }}">Dividir</option>
                             <option value='{{ url('preguntas') }}'>Preguntas</option>
+                            <option value='{{ url('bingo') }}'>Bingo</option>
                             
                             
                         </select>

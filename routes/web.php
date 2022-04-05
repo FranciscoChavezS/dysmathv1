@@ -55,3 +55,5 @@ Route::get('multi', [gameController::class, 'multi']);
 Route::get('division', [gameController::class, 'division']);
 
 Route::get('preguntas', [gameController::class, 'preguntas']);
+
+Route::get('bingo', [gameController::class, 'bingo']);

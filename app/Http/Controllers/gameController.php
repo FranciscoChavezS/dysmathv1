@@ -35,4 +35,10 @@ class gameController extends Controller
         return view('games.preguntas');
 
     }
+
+    public function bingo(){
+
+        return view('games.bingo');
+
+    }
 }
