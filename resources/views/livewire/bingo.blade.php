@@ -1,5 +1,5 @@
 <div>
-    <div class="row pb-5 mt-6">
+    <div class="row pb-5 mt-6 container">
         <div class="col-md-8">
 
             {{-- Los resultados que van saliendo --}}
