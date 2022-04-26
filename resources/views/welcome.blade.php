@@ -91,14 +91,15 @@
         {{-- Estilos de Chatbot --}}
         <script>
             var botmanWidget = {
-                frameEndpoint: '/botman/chat',
                 title: "DYSMATH",
                 placeholderText: "Escribe aquí...",
                 introMessage: "Hola, soy tu asistente virtual",
+                aboutText: 'DysMath',
                 mainColor: "#ab49cc",
                 bubbleBackground: "#5e5e5e",
                 mobileHeight: '100%',
                 mobileWidth: '300px',
+                bubbleAvatarUrl: 'img/home/dysmath1.png'
                 
                 
             };
