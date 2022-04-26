@@ -96,10 +96,10 @@
                 introMessage: "Hola, soy tu asistente virtual",
                 aboutText: 'DysMath',
                 mainColor: "#ab49cc",
-                bubbleBackground: "#5e5e5e",
+                bubbleBackground: "#9C9C9C",
                 mobileHeight: '100%',
                 mobileWidth: '300px',
-                bubbleAvatarUrl: 'img/home/dysmath1.png'
+                bubbleAvatarUrl: 'img/home/chatbot.png'
                 
                 
             };
