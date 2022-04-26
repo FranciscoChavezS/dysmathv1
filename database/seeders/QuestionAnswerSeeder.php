@@ -39,21 +39,84 @@ class QuestionAnswerSeeder extends Seeder
     {
     return collect([
         [
-            'question' => 'Who created Laravel?',
-            'points' => '5',
+            'question' => 'Cuenta estos perritos con tu dedo. ¿Cuántos perritos has contado?',
+            'points' => '1',
             'answers' => [
-                ['text' => 'Christoph Rumpel', 'correct_one' => false],
-                ['text' => 'Jeffrey Way', 'correct_one' => false],
-                ['text' => 'Taylor Otwell', 'correct_one' => true],
+                ['text' => '6', 'correct_one' => false],
+                ['text' => '4', 'correct_one' => false],
+                ['text' => '5', 'correct_one' => true],
             ],
         ],
         [
-            'question' => 'Which of the following is a Laravel product?',
-            'points' => '10',
+            'question' => 'Cuenta estos pollitos con tu dedo. ¿Cuántos pollitos has contado?',
+            'points' => '1',
             'answers' => [
-                ['text' => 'Horizon', 'correct_one' => true],
-                ['text' => 'Sunset', 'correct_one' => false],
-                ['text' => 'Nightfall', 'correct_one' => true],
+                ['text' => '3', 'correct_one' => false],
+                ['text' => '4', 'correct_one' => false],
+                ['text' => '5', 'correct_one' => true],
+            ],
+        ],
+        [
+            'question' => 'Cuenta estos árboles con tu dedo. ¿Cuántos árboles has contado?',
+            'points' => '1',
+            'answers' => [
+                ['text' => '2', 'correct_one' => false],
+                ['text' => '5', 'correct_one' => false],
+                ['text' => '4', 'correct_one' => true],
+            ],
+        ],
+        [
+            'question' => 'Cuenta estos dulces con tu dedo. ¿Cuántos dulces has contado?',
+            'points' => '1',
+            'answers' => [
+                ['text' => '8', 'correct_one' => false],
+                ['text' => '7', 'correct_one' => false],
+                ['text' => '9', 'correct_one' => true],
+            ],
+        ],
+        [
+            'question' => 'Cuenta estos helados con tu dedo. ¿Cuántos helados has contado?',
+            'points' => '1',
+            'answers' => [
+                ['text' => '7', 'correct_one' => false],
+                ['text' => '10', 'correct_one' => false],
+                ['text' => '8', 'correct_one' => true],
+            ],
+        ],
+        [
+            'question' => 'Cuenta estos lápices con tu dedo. ¿Cuántos lápices has contado?',
+            'points' => '1',
+            'answers' => [
+                ['text' => '3', 'correct_one' => false],
+                ['text' => '4', 'correct_one' => false],
+                ['text' => '5', 'correct_one' => true],
+            ],
+        ],
+        [
+            'question' => 'Cuenta estos osos de peluches con tu dedo. ¿Cuántos osos de peluches has contado?',
+            'points' => '1',
+            'answers' => [
+                ['text' => '5', 'correct_one' => false],
+                ['text' => '3', 'correct_one' => false],
+                ['text' => '4', 'correct_one' => true],
+            ],
+        ],
+        [
+            'question' => 'Cuenta estos manzanas con tu dedo. ¿Cuántos manzanas has contado?',
+            'points' => '1',
+            'answers' => [
+                ['text' => '12', 'correct_one' => false],
+                ['text' => '11', 'correct_one' => false],
+                ['text' => '10', 'correct_one' => true],
+            ],
+        ],
+        [
+            'question' => 'Cuenta estos pelotas con tu dedo. ¿Cuántos pelotas has contado?',
+            'points' => '1',
+            'answers' => [
+                ['text' => '11', 'correct_one' => false],
+                ['text' => '10', 'correct_one' => false],
+                ['text' => '9', 'correct_one' => true],
             ],
         ],
     ]);

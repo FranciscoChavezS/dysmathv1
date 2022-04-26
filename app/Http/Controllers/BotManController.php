@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 use BotMan\BotMan\BotMan;
 use BotMan\BotMan\Messages\Incoming\Answer;
@@ -10,7 +11,7 @@ use BotMan\BotMan\Messages\Outgoing\OutgoingMessage;
 use BotMan\BotMan\Messages\Conversations\Conversation;
 use App\Conversations\BotConversation;
 
-class BotManController extends Controller
+class BotManController extends Controller 
 {
     protected $questionCount = 0;
     
