@@ -12,6 +12,7 @@ use BotMan\BotMan\Messages\Outgoing\OutgoingMessage;
 use BotMan\BotMan\Messages\Incoming\Answer as BotManAnswer;
 use BotMan\BotMan\Messages\Outgoing\Question as BotManQuestion;
 use App\Conversations\QuizConversation;
+use App\Conversations\ExamenConversation;
 
 class BotConversation extends Conversation
 {
@@ -35,8 +36,8 @@ class BotConversation extends Conversation
                 if ($answer->getValue() === 'seis') {//Si es el value seis, contestará con este mensaje
                     $this->getBot()->startConversation(new QuizConversation());
                     //Si es el value info, llamaremos a la funcion options
-                } else if ($answer->getValue() === 'info'){
-                    $this->options();
+                } else if ($answer->getValue() === 'siete'){
+                    $this->getBot()->startConversation(new ExamenConversation());
                 } else if ($answer->getValue() === 'quiz'){
                     $this->options();
                 }

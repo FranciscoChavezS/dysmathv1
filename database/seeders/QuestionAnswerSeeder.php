@@ -39,7 +39,7 @@ class QuestionAnswerSeeder extends Seeder
     {
     return collect([
         [
-            'question' => 'Cuenta estos perritos con tu dedo. ¿Cuántos perritos has contado?',
+            'question' => 'Cuenta estos perritos con tu dedo 🐶🐶🐶🐶🐶. ¿Cuántos perritos has contado?',
             'points' => '1',
             'answers' => [
                 ['text' => '6', 'correct_one' => false],
@@ -48,7 +48,7 @@ class QuestionAnswerSeeder extends Seeder
             ],
         ],
         [
-            'question' => 'Cuenta estos pollitos con tu dedo. ¿Cuántos pollitos has contado?',
+            'question' => 'Cuenta estos pollitos con tu dedo 🐥🐥🐥🐥🐥. ¿Cuántos pollitos has contado?',
             'points' => '1',
             'answers' => [
                 ['text' => '3', 'correct_one' => false],
@@ -57,7 +57,7 @@ class QuestionAnswerSeeder extends Seeder
             ],
         ],
         [
-            'question' => 'Cuenta estos árboles con tu dedo. ¿Cuántos árboles has contado?',
+            'question' => 'Cuenta estos árboles con tu dedo 🌳🌳🌳🌳. ¿Cuántos árboles has contado?',
             'points' => '1',
             'answers' => [
                 ['text' => '2', 'correct_one' => false],
@@ -66,7 +66,7 @@ class QuestionAnswerSeeder extends Seeder
             ],
         ],
         [
-            'question' => 'Cuenta estos dulces con tu dedo. ¿Cuántos dulces has contado?',
+            'question' => 'Cuenta estos dulces con tu dedo 🍬🍭🍫🍬🍭🍫🍬🍭🍫. ¿Cuántos dulces has contado?',
             'points' => '1',
             'answers' => [
                 ['text' => '8', 'correct_one' => false],
@@ -75,7 +75,7 @@ class QuestionAnswerSeeder extends Seeder
             ],
         ],
         [
-            'question' => 'Cuenta estos helados con tu dedo. ¿Cuántos helados has contado?',
+            'question' => 'Cuenta estos helados con tu dedo 🍨🍦🍨🍦🍨🍦🍨🍦. ¿Cuántos helados has contado?',
             'points' => '1',
             'answers' => [
                 ['text' => '7', 'correct_one' => false],
@@ -84,7 +84,7 @@ class QuestionAnswerSeeder extends Seeder
             ],
         ],
         [
-            'question' => 'Cuenta estos lápices con tu dedo. ¿Cuántos lápices has contado?',
+            'question' => 'Cuenta estos carros con tu dedo 🚗🚙🚕🚑🚓. ¿Cuántos carros has contado?',
             'points' => '1',
             'answers' => [
                 ['text' => '3', 'correct_one' => false],
@@ -93,7 +93,7 @@ class QuestionAnswerSeeder extends Seeder
             ],
         ],
         [
-            'question' => 'Cuenta estos osos de peluches con tu dedo. ¿Cuántos osos de peluches has contado?',
+            'question' => 'Cuenta estos osos de peluches con tu dedo 🧸🧸🧸🧸. ¿Cuántos osos de peluches has contado?',
             'points' => '1',
             'answers' => [
                 ['text' => '5', 'correct_one' => false],
@@ -102,7 +102,7 @@ class QuestionAnswerSeeder extends Seeder
             ],
         ],
         [
-            'question' => 'Cuenta estos manzanas con tu dedo. ¿Cuántos manzanas has contado?',
+            'question' => 'Cuenta estos manzanas con tu dedo 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎. ¿Cuántos manzanas has contado?',
             'points' => '1',
             'answers' => [
                 ['text' => '12', 'correct_one' => false],
@@ -111,7 +111,7 @@ class QuestionAnswerSeeder extends Seeder
             ],
         ],
         [
-            'question' => 'Cuenta estos pelotas con tu dedo. ¿Cuántos pelotas has contado?',
+            'question' => 'Cuenta estos pelotas con tu dedo ⚽⚽⚽⚽⚽⚽⚽⚽⚽. ¿Cuántos pelotas has contado?',
             'points' => '1',
             'answers' => [
                 ['text' => '11', 'correct_one' => false],

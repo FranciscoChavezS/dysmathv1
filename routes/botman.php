@@ -1,5 +1,6 @@
 <?php
 
+use App\Conversations\ExamenConversation;
 use BotMan\BotMan\BotMan;
 use App\Conversations\QuizConversation;
 use App\Http\Controllers\BotManController;
@@ -18,4 +19,8 @@ $botman->fallback('App\Http\Controllers\FailChatController@index');
 
 $botman->hears('start', function (BotMan $bot) {
     $bot->startConversation(new QuizConversation());
+});
+
+$botman->hears('siete', function (BotMan $bot) {
+    $bot->startConversation(new ExamenConversation());
 });
