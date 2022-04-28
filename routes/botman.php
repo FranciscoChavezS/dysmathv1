@@ -1,6 +1,8 @@
 <?php
 
 use App\Conversations\ExamenConversation;
+use App\Conversations\ExamenConversation8;
+use App\Conversations\ExamenConversation9;
 use BotMan\BotMan\BotMan;
 use App\Conversations\QuizConversation;
 use App\Http\Controllers\BotManController;
@@ -23,4 +25,12 @@ $botman->hears('start', function (BotMan $bot) {
 
 $botman->hears('siete', function (BotMan $bot) {
     $bot->startConversation(new ExamenConversation());
+});
+
+$botman->hears('ocho', function (BotMan $bot) {
+    $bot->startConversation(new ExamenConversation8());
+});
+
+$botman->hears('nueve', function (BotMan $bot) {
+    $bot->startConversation(new ExamenConversation9());
 });
