@@ -17,6 +17,7 @@ class CreatePreguntasTable extends Migration
             $table->id();
             $table->string('texto');
             $table->integer('puntos')->unsigned();
+            $table->string('imagen')->nullable();
             $table->timestamps();
         });
     }

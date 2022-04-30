@@ -94,6 +94,14 @@ class ExamenConversation9 extends Conversation
     {
         $this->say('Finalizado 🏁');
         $this->say("Has superado todas las preguntas. Alcanzaste {$this->userPoints} Puntos! Respuestas correctas: {$this->userCorrectAnswers} / {$this->questionCount}");
+        
+        if($this->userPoints == '16'){
+            $this->say("🟩TIENE UN GRADO DE DISCALCULIA BAJO 🟩");
+        }else if($this->userPoints == '9' OR $this->userPoints == '10' OR $this->userPoints == '11' OR $this->userPoints == '12' OR $this->userPoints == '13' OR $this->userPoints == '14' OR $this->userPoints == '15'){
+            $this->say("🟨TIENE UN GRADO DE DISCALCULIA MEDIO🟨");
+        }else{
+            $this->say("🟥TIENE UN GRADO DE DISCALCULIA GRAVE🟥");
+        }
     } 
 
 }

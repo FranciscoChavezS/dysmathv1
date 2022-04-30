@@ -145,6 +145,15 @@ class PreguntaRespuesta8Seeder extends Seeder
                 ['texto8' => '12', 'correcta8' => true],
             ],
         ],
+        [
+            'pregunta8' => 'María tenía 2 helados. Se le derritió 1. ¿Cuántos helados le quedan?',
+            'puntos8' => '1',
+            'respuesta8' => [
+                ['texto8' => '2', 'correcta8' => false],
+                ['texto8' => '0', 'correcta8' => false],
+                ['texto8' => '1', 'correcta8' => true],
+            ],
+        ],
     ]);
     }
 }

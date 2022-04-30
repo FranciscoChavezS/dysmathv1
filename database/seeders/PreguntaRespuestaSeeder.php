@@ -23,6 +23,8 @@ class PreguntaRespuestaSeeder extends Seeder
             $crearPregunta = Pregunta::create([
                 'texto' => $pregunta['pregunta'],
                 'puntos' => $pregunta['puntos'],
+                'imagen' => $pregunta['imagen'],
+
             ]);
 
             collect($pregunta['respuesta'])->each(function ($respuesta) use ($crearPregunta) {
@@ -38,8 +40,9 @@ class PreguntaRespuestaSeeder extends Seeder
     {
     return collect([
         [
-            'pregunta' => '¿Cuántas mariposas y abejas hay en total? 🦋🦋🦋🦋🐝🐝🐝🐝🐝🐝🐝🐝',
+            'pregunta' => '¿Cuántas mariposas y abejas hay en total?',
             'puntos' => '1',
+            'imagen' => 'https://i.ibb.co/dPHMhfx/Pregunta-1.png',
             'respuesta' => [
                 ['texto' => '11', 'correcta' => false],
                 ['texto' => '10', 'correcta' => false],
@@ -47,8 +50,9 @@ class PreguntaRespuestaSeeder extends Seeder
             ],
         ],
         [
-            'pregunta' => '¿Cuántas manzanas y naranjas hay en total? 🍏🍏🍏🍏🍏🍏🍏🍊🍊🍊🍊🍊🍊',
+            'pregunta' => '¿Cuántas manzanas y naranjas hay en total?',
             'puntos' => '1',
+            'imagen' => 'https://i.ibb.co/1LQKwyz/Pregunta-2.png',
             'respuesta' => [
                 ['texto' => '12', 'correcta' => false],
                 ['texto' => '10', 'correcta' => false],
@@ -56,8 +60,9 @@ class PreguntaRespuestaSeeder extends Seeder
             ],
         ],
         [
-            'pregunta' => '¿Cuántos dados y lentes hay en total? 🎲🎲🎲🎲🎲🎲👓👓👓👓',
+            'pregunta' => '¿Cuántos dados y lápices hay en total?',
             'puntos' => '1',
+            'imagen' => 'https://i.ibb.co/mC9QjTh/Pregunta-3.png',
             'respuesta' => [
                 ['texto' => '11', 'correcta' => false],
                 ['texto' => '9', 'correcta' => false],
@@ -65,8 +70,9 @@ class PreguntaRespuestaSeeder extends Seeder
             ],
         ],
         [
-            'pregunta' => '¿Cuántas hojas y flores hay en total? 🌳🌳🌳🌳🌳🌳🌳🌺🌺🌺🌺🌺🌺🌺',
+            'pregunta' => '¿Cuántas hojas y flores hay en total?',
             'puntos' => '1',
+            'imagen' => 'https://i.ibb.co/JcFTFsH/Pregunta-4.png',
             'respuesta' => [
                 ['texto' => '16', 'correcta' => false],
                 ['texto' => '15', 'correcta' => false],
@@ -74,8 +80,9 @@ class PreguntaRespuestaSeeder extends Seeder
             ],
         ],
         [
-            'pregunta' => '¿Cuántos libros y cuadernos hay en total? 📔📔📔📔📔📔📔📒📒📒📒📒',
+            'pregunta' => '¿Cuántos libros y cuadernos hay en total?',
             'puntos' => '1',
+            'imagen' => 'https://i.ibb.co/QJBbhtp/Pregunta-5.png',
             'respuesta' => [
                 ['texto' => '11', 'correcta' => false],
                 ['texto' => '10', 'correcta' => false],
@@ -83,8 +90,9 @@ class PreguntaRespuestaSeeder extends Seeder
             ],
         ],
         [
-            'pregunta' => '¿Cuántas fresas y cerezas hay en total? 🍓🍓🍓🍓🍓🍒🍒🍒🍒🍒🍒',
+            'pregunta' => '¿Cuántas fresas y cerezas hay en total?',
             'puntos' => '1',
+            'imagen' => 'https://i.ibb.co/6gLLkkv/Pregunta-6.png',
             'respuesta' => [
                 ['texto' => '15', 'correcta' => false],
                 ['texto' => '12', 'correcta' => false],
@@ -92,8 +100,9 @@ class PreguntaRespuestaSeeder extends Seeder
             ],
         ],
         [
-            'pregunta' => '¿Cuántas galletas quedarán si cada niño se come una? 🙎‍♂️🙎🍪🍪🍪🍪🍪🍪',
+            'pregunta' => '¿Cuántas galletas quedarán si cada niño se come una?',
             'puntos' => '1',
+            'imagen' => 'https://i.ibb.co/rwMW6Gh/Pregunta-7.png',
             'respuesta' => [
                 ['texto' => '5', 'correcta' => false],
                 ['texto' => '3', 'correcta' => false],
@@ -101,8 +110,9 @@ class PreguntaRespuestaSeeder extends Seeder
             ],
         ],
         [
-            'pregunta' => '¿Cuántas bananas quedarán si cada chango se come una? 🐵🐵🐵🐵🍌🍌🍌🍌🍌🍌🍌🍌',
+            'pregunta' => '¿Cuántas nueces quedarán si cada ardilla se come una?',
             'puntos' => '1',
+            'imagen' => 'https://i.ibb.co/2t08V3R/Pregunta-8.png',
             'respuesta' => [
                 ['texto' => '6', 'correcta' => false],
                 ['texto' => '5', 'correcta' => false],
@@ -110,8 +120,9 @@ class PreguntaRespuestaSeeder extends Seeder
             ],
         ],
         [
-            'pregunta' => '¿Cuántos huesos quedarán si cada perrito se come uno? 🐶 🐶 🐶 🐶 🐶 🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴',
+            'pregunta' => '¿Cuántos huesos quedarán si cada perrito se come uno?',
             'puntos' => '1',
+            'imagen' => 'https://i.ibb.co/khJJBs0/Pregunta-9.png',
             'respuesta' => [
                 ['texto' => '8', 'correcta' => false],
                 ['texto' => '6', 'correcta' => false],
@@ -119,8 +130,9 @@ class PreguntaRespuestaSeeder extends Seeder
             ],
         ],
         [
-            'pregunta' => '¿Cuántos regalos quedarán si cada niño toma uno? 👧🧒👩🎁🎁🎁🎁🎁🎁🎁🎁🎁',
+            'pregunta' => '¿Cuántos regalos quedarán si cada niño toma uno?',
             'puntos' => '1',
+            'imagen' => 'https://i.ibb.co/dWW6vkH/Pregunta-10.png',
             'respuesta' => [
                 ['texto' => '4', 'correcta' => false],
                 ['texto' => '8', 'correcta' => false],
@@ -128,8 +140,9 @@ class PreguntaRespuestaSeeder extends Seeder
             ],
         ],
         [
-            'pregunta' => '¿Cuántas zanahorias quedarán si cada conejo se come una? 🐇🐇🐇🐇🐇🐇🥕🥕🥕🥕🥕🥕🥕🥕🥕🥕🥕🥕',
+            'pregunta' => '¿Cuántas zanahorias quedarán si cada conejo se come una?',
             'puntos' => '1',
+            'imagen' => 'https://i.ibb.co/NNyRvr9/Pregunta-11.png',
             'respuesta' => [
                 ['texto' => '5', 'correcta' => false],
                 ['texto' => '7', 'correcta' => false],
