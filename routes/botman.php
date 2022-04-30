@@ -3,6 +3,7 @@
 use App\Conversations\ExamenConversation;
 use App\Conversations\ExamenConversation8;
 use App\Conversations\ExamenConversation9;
+use App\Conversations\HighscoreConversation;
 use BotMan\BotMan\BotMan;
 use App\Conversations\QuizConversation;
 use App\Http\Controllers\BotManController;

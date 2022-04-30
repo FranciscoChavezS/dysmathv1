@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateQuestionsTable extends Migration
+class CreateHighscoresTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class CreateQuestionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('questions', function (Blueprint $table) {
+        Schema::create('highscores', function (Blueprint $table) {
             $table->id();
-            $table->string('text');
-            $table->integer('points')->unsigned();
-            $table->string('imagen')->nullable();
+            $table->integer('chat_id');
+            $table->string('name');
+            $table->integer('points')->default(0);
+            $table->integer('correct_answers')->default(0);
+            $table->integer('tries')->default(0);
             $table->timestamps();
         });
     }
@@ -29,6 +31,6 @@ class CreateQuestionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('questions');
+        Schema::dropIfExists('highscores');
     }
 }

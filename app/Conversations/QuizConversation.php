@@ -3,10 +3,15 @@
 namespace App\Conversations;
 
 use App\Models\Answer;
+use App\Models\Course;
 use App\Models\Question;
+use App\Models\Highscore;
+use App\Models\Level;
+use BotMan\BotMan\Messages\Attachments\Image;
 use BotMan\BotMan\Messages\Outgoing\Actions\Button;
 use BotMan\BotMan\Messages\Conversations\Conversation;
 use BotMan\BotMan\Messages\Incoming\Answer as BotManAnswer;
+use BotMan\BotMan\Messages\Outgoing\OutgoingMessage;
 use BotMan\BotMan\Messages\Outgoing\Question as BotManQuestion;
 
 
@@ -82,6 +87,9 @@ class QuizConversation extends Conversation
     private function createQuestionTemplate(Question $question)
     {
         $questionText = '➡️ Pregunta: '.$this->currentQuestion.' / '.$this->questionCount.' : '.$question->text;
+        $attachament = new Image($question->imagen);
+        $response=OutgoingMessage::create('')->withAttachment($attachament);
+        $this->say($response);
         $questionTemplate = BotManQuestion::create($questionText);
         $answers = $question->answers->shuffle();
 
@@ -96,6 +104,19 @@ class QuizConversation extends Conversation
     private function showResult()
     {
         $this->say('Finalizado 🏁');
-        $this->say("Has superado todas las preguntas. Alcanzaste {$this->userPoints} Puntos! Respuestas correctas: {$this->userCorrectAnswers} / {$this->questionCount}");
+        $this->say("Alcanzaste {$this->userPoints} Puntos! Respuestas correctas: {$this->userCorrectAnswers} / {$this->questionCount}");
+
+        $course = Level::all();
+        
+        if($this->userPoints == '9' OR $this->userPoints == '8'){
+            $this->say("🟩TIENE UN GRADO DE DISCALCULIA BAJO 🟩");
+        }else if($this->userPoints == '5' OR $this->userPoints == '6' OR $this->userPoints == '7' ){
+            $this->say("🟨TIENE UN GRADO DE DISCALCULIA MEDIO🟨");
+        }else{
+            $this->say("🟥TIENE UN GRADO DE DISCALCULIA GRAVE🟥");
+        }
+
     }
+
+    
 }

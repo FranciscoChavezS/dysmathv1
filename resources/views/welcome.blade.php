@@ -93,10 +93,11 @@
             var botmanWidget = {
                 title: "DYSMATH",
                 placeholderText: "Escribe aquí...",
-                introMessage: "Hola, soy tu asistente virtual",
+                introMessage: "Hola, encantado de conocerte 😁",
                 aboutText: 'DysMath',
                 mainColor: "#ab49cc",
                 bubbleBackground: "#9C9C9C",
+                desktopWidth: '500px',
                 mobileHeight: '100%',
                 mobileWidth: '300px',
                 bubbleAvatarUrl: 'img/home/chatbot.png'

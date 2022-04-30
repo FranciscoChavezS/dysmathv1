@@ -105,6 +105,7 @@
 
                 </div>
             </section>
+            <h1 class="text-gray-400 ">Recomendaciones</h1>
             <aside class="hidden lg:block">
                 @foreach ($similares as $similar)
                     <article class="flex mb-6">
