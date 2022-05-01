@@ -126,8 +126,8 @@
                   </p>
                 </div>
 
-                <div class="mb-6 md:mb-0">
-                    <h5 class="font-medium mb-2 uppercase">.</h5>
+                <div class="mb-6 md:mb-0 container">
+                    <h5 class="font-medium mb-2 uppercase"></h5>
             
                     <p class="mb-4">
                       <img src="{{asset('img/home/Logo1.svg')}}" alt="" class="h-24">
