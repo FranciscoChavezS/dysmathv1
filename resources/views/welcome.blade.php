@@ -107,27 +107,41 @@
         </script>
 
         <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
+        
+        <hr>
+        <footer class="bg-gray-100 text-center lg:text-left shadow dark:bg-gray-800">
+            <div class="container p-6 text-gray-800">
+              <div class="grid lg:grid-cols-2 gap-4">
+                <div class="mb-6 md:mb-0">
+                    <h5 class="font-medium mb-2 uppercase dark:text-gray-300">CONTACTO PSICÓLOGO</h5>
+          
+                  <p class="mb-4 dark:text-gray-700">
+                      <ul>
+                          <li class="dark:text-gray-400">Romero Cervantes Paola Guadalupe</li>
+                          <li class="dark:text-gray-400">NO. CÉDULA PROFESIONAL: 709 641 9 / CED PROF. ESTATAL PEJ322857</li>
+                          <li class="dark:text-gray-400"><i class="fa fa-envelope"></i> pgr_3@hotmail.com</li>
+                          <li class="dark:text-gray-400"><i class="fa fa-home"></i> CALLE HOSPITAL 851, CP: 44200 Guadalajara, Jal. México</li>
+                          <li class="dark:text-gray-400"><i class="fa fa-phone"></i>+52 33 38 25 91 41</li>
+                      </ul>
+                  </p>
+                </div>
 
-        <footer class="text-center text-white" style="background-color: #0a4275;">
-            <div class="container p-6">
-              <div class="">
-                <p class="flex justify-center items-center">
-                  <span class="mr-4 text-black text-2xl font-bold"> <i class="fa fa-user text-yellow-500"></i>CONTACTO DE PSICÓLOGA</span>
-                  <h3 class="font-bold text-white">Romero Cervantes Paola Guadalupe</h3>
-                  <p class="text-white">No. Cédula profesional: 709 641 9 / Ced prof. Estatal PEJ322857</p>
-                  <p class="text-white" >Correo: pgr_3@hotmail.com</p>
-                  <p class="text-white">Consultorio: Calle Hospital 851, CP: 44200 Guadalajara, Jal. México</p>
-                  <p class="text-white">Tel: +52 33 38 25 91 41</p>
-
-                </p>
+                <div class="mb-6 md:mb-0">
+                    <h5 class="font-medium mb-2 uppercase">.</h5>
+            
+                    <p class="mb-4">
+                      <img src="{{asset('img/home/Logo1.svg')}}" alt="" class="h-24">
+                    </p>
+                  </div>
               </div>
             </div>
           
-            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
-              © 2022 Copyright:
-              <a class="text-white" href="#">CUCEI</a>
+            <div class="text-center text-gray-700 p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2022 Copyright: Todos los derechos reservados 
+              <a class="text-gray-800" href="#!">DysMath</a>
             </div>
           </footer>
+          
 
 </x-app-layout>
 
