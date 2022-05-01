@@ -109,7 +109,7 @@
         <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
         
         <hr>
-        <footer class="bg-gray-100 text-center lg:text-left shadow dark:bg-gray-800">
+        <footer class="bg-gray-300 text-center lg:text-left shadow dark:bg-gray-800">
             <div class="container p-6 text-gray-800">
               <div class="grid lg:grid-cols-2 gap-4">
                 <div class="mb-6 md:mb-0">
