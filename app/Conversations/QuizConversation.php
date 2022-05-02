@@ -13,7 +13,7 @@ use BotMan\BotMan\Messages\Conversations\Conversation;
 use BotMan\BotMan\Messages\Incoming\Answer as BotManAnswer;
 use BotMan\BotMan\Messages\Outgoing\OutgoingMessage;
 use BotMan\BotMan\Messages\Outgoing\Question as BotManQuestion;
-
+use Illuminate\Support\Facades\DB;
 
 class QuizConversation extends Conversation
 {
@@ -33,11 +33,13 @@ class QuizConversation extends Conversation
     /** @var integer */
     protected $currentQuestion = 1;
 
+
         
     public function run()
     {
         $this->quizQuestions = Question::all()
             ->shuffle();
+            
         $this->questionCount = $this->quizQuestions->count();
         $this->quizQuestions = $this->quizQuestions->keyBy('id');
         $this->showInfo();
@@ -54,8 +56,8 @@ class QuizConversation extends Conversation
         if ($this->quizQuestions->count()) {
             return $this->askQuestion($this->quizQuestions->first());
         }
-
         $this->showResult();
+
     }
     private function askQuestion(Question $question)
     {
@@ -86,6 +88,7 @@ class QuizConversation extends Conversation
 
     private function createQuestionTemplate(Question $question)
     {
+
         $questionText = '➡️ Pregunta: '.$this->currentQuestion.' / '.$this->questionCount.' : '.$question->text;
         $attachament = new Image($question->imagen);
         $response=OutgoingMessage::create('')->withAttachment($attachament);
@@ -99,21 +102,22 @@ class QuizConversation extends Conversation
 
         return $questionTemplate;
     }
-
-
+    
     private function showResult()
     {
+    
         $this->say('Finalizado 🏁');
         $this->say("Alcanzaste {$this->userPoints} Puntos! Respuestas correctas: {$this->userCorrectAnswers} / {$this->questionCount}");
-
-        $course = Level::all();
         
         if($this->userPoints == '9' OR $this->userPoints == '8'){
-            $this->say("🟩TIENE UN GRADO DE DISCALCULIA BAJO 🟩");
+            $this->say('<h2>🟩TIENE UN GRADO DE DISCALCULIA BAJO🟩</h2>');
+            $this->say('<h3><a href="https://dysmathv1.ga/cursos/aprendiendo-las-sumas" target="_blank">➡️ESTE CURSO PODRÍA SER PARA TI </a></h3>');
         }else if($this->userPoints == '5' OR $this->userPoints == '6' OR $this->userPoints == '7' ){
-            $this->say("🟨TIENE UN GRADO DE DISCALCULIA MEDIO🟨");
+            $this->say('<h2>🟨TIENE UN GRADO DE DISCALCULIA MEDIO🟨</h2>');
+            $this->say('<h3><a href="https://dysmathv1.ga/cursos/aprendiendo-las-series-de-n-meros" target="_blank">➡️ESTE CURSO PODRÍA SER PARA TI </a></h3>');
         }else{
-            $this->say("🟥TIENE UN GRADO DE DISCALCULIA GRAVE🟥");
+            $this->say('<h2>🟥TIENE UN GRADO DE DISCALCULIA GRAVE🟥</h2>');
+            $this->say('<h3><a href="https://dysmathv1.ga/cursos/aprendiendo-a-contar" target="_blank">➡️ESTE CURSO PODRÍA SER PARA TI </a></h3>');
         }
 
     }

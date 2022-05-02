@@ -101,11 +101,15 @@ class ExamenConversation extends Conversation
         $this->say("Alcanzaste {$this->userPoints} Puntos! Respuestas correctas: {$this->userCorrectAnswers} / {$this->questionCount}");
 
         if($this->userPoints == '10' OR $this->userPoints == '11'){
-            $this->say("🟩TIENE UN GRADO DE DISCALCULIA BAJO 🟩");
+            $this->say('<h2>🟩TIENE UN GRADO DE DISCALCULIA BAJO🟩</h2>');
+            $this->say('<h3><a href="https://dysmathv1.ga/cursos/aprendiendo-las-restas" target="_blank">ESTE CURSO PODRÍA SER PARA TI MULTI</a></h3>');
+
         }else if($this->userPoints == '6' OR $this->userPoints == '7' OR $this->userPoints == '8' OR $this->userPoints == '9' ){
-            $this->say("🟨TIENE UN GRADO DE DISCALCULIA MEDIO🟨");
+            $this->say('<h2>🟨TIENE UN GRADO DE DISCALCULIA MEDIO🟨</h2>');
+            $this->say('<h3><a href="https://dysmathv1.ga/cursos/aprendiendo-las-sumas" target="_blank">ESTE CURSO PODRÍA SER PARA TI</a></h3>');
         }else{
-            $this->say("🟥TIENE UN GRADO DE DISCALCULIA GRAVE🟥");
+            $this->say('<h2>🟥TIENE UN GRADO DE DISCALCULIA GRAVE🟥</h2>');
+            $this->say('<h3><a href="https://dysmathv1.ga/cursos/aprendiendo-las-series-de-n-meros" target="_blank">ESTE CURSO PODRÍA SER PARA TI</a></h3>');
         }
     } 
 
